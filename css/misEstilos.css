@@ -1,0 +1,563 @@
+/*RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*! ----------------------------------------- BODY -----------------------------*/
+
+/*! ---------------------------------------- HEADER ----------------------------*/
+header{
+    background-color:#d8d0d0;
+    top: 0;
+    z-index: 1;
+    position:sticky;
+}
+
+header nav .navbar-expand{
+    color: aquamarine;
+
+}
+
+header .navbar-brand{
+    font-size: 60px;
+    font-weight: bold;
+    font-style:oblique;
+    color: rgb(94, 7, 7);
+    grid-column:1/4;
+}
+
+header div .container-fluid{
+    grid-column:4/6;
+    grid-row: 1/1;
+}
+
+header nav ul li{
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    border-radius: 5px;
+    background-color:rgba(250, 235, 215, 0.288);
+    color: rgb(94,7,7);
+    font-weight: bold;
+}
+
+/*!-------------------WhatsApp ICON-----------------------*/
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}
+
+/*! ------------------------------- SECTION HEROE--------------------------------*/
+.heroe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.heroe div{
+    width: 50%;
+    color: rgb(8, 8, 8);
+    font-size: large;
+    padding: 5rem;
+}
+
+.heroe h2{
+color: rgb(0, 0, 0);
+font-size: 4rem;
+}
+
+
+.heroe img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10px;
+}
+
+.botones{
+    margin-bottom: 30px;
+    padding: 3px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    color: black;
+}
+
+.botones a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(94, 7, 7);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.botonHeroe:hover{
+    background-color: #3d0404b7;
+}
+
+
+/*!--------------------------------Seccion features----------------------------------*/
+.features{
+    text-align: center;
+    background-color: rgb(251, 250, 248);
+}
+
+.features .featuresContenedor{
+    display: flex;
+    text-align: center;
+    justify-content:space-evenly;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.features h2{
+    font-size: 50px;
+    padding-top:6rem;
+}
+
+.featureCreate{
+   font-size: larger;
+   width: 20vh;
+}
+
+.featureCreate img{
+    margin-top: 1rem;
+ }
+
+.featureUpdate{
+    font-size: larger;
+    width: 25vh;
+ }
+
+ .featureUpdate img{
+    margin-top:1rem;
+ }
+
+ .featurePrioritize{
+    font-size: larger;
+    width: 35vh;
+ }
+
+ .featurePrioritize img{
+    margin-top:1rem;
+ }
+
+ .featureDelete{
+    font-size: larger;
+    width: 35vh;
+ }
+
+ .featureDelete img{
+    margin-top:1rem;
+ }
+
+/*!-------------------------------------------SECCION VIDEO-----------------------*/
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.video h2{
+    font-size: 50px;
+    padding-top:6rem;
+}
+
+.video p{
+    font-size: larger;
+}
+
+.video iframe{
+    margin-top: 10rem;
+}
+
+/*! -----------------------------------------HISTORIAS DE EXITO----------------------*/
+
+
+.historias h3{
+    font-size: 30px;
+    padding-top:6rem;
+    margin-bottom:6rem;
+    text-align: center;
+}
+
+.historias a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(94, 7, 7);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.historias img{
+    width: auto;
+    height: fit-content;
+}
+
+.historias button .carousel-control{
+    color: black;
+}
+
+.carousel-item img{
+    height:208px;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.carousel-control-next-icon{
+    border-radius: 100px;
+    background-color: rgba(94, 7, 7, 0.367);
+}
+.carousel-control-prev-icon{
+    border-radius: 100px;
+    background-color: rgba(94, 7, 7, 0.367);
+}
+
+
+
+
+/*! --------------------------------Sección preguntas frecuentes------------------------*/
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+.preguntas h3{
+font-size: 30px;
+padding-top:6rem;
+margin-bottom:1rem;
+text-align: center;
+}
+
+.preguntas .accordion-button:hover{
+    background-color:rgba(203, 67, 67, 0.045);
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color:brown;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+
+
+/*!--------------------------------------------FOOTER------------------------------------*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(99, 128, 154) ;
+    text-align: center;
+}
+
+.direction p{
+    text-align: justify
+}
+
+footer h4{
+    font-size: larger;
+    margin: 2rem;
+    color: aliceblue;
+}
+
+footer ul li a{
+    color: rgba(19, 20, 21, 0.571);
+    margin: 15px;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: rgb(19, 20, 21);
+}
+
+
+footer ul li{
+    list-style: none;
+    margin: 25px;
+}
+
+footer img{
+    height: 4rem;
+    margin: 2rem;
+}
+
+.footerIcons img{
+    width: 30px;
+    height: 30px;
+}
+
+footer iframe{
+width: 20rem;
+height: 20rem;
+padding: 1rem;
+border-radius: 20px;
+}
+
+/*------------------------------------------PRICING PAGE-----------------------*/
+.pricing1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: justify;
+}
+.pricing1 h1{
+    margin-bottom: 1rem;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(94,7,7);
+}
+.pricing1 img{
+    width:600px;
+    height:600px;
+}
+.pricing1 p{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*----------------------------------------FEATURES PAGE---------------------------------*/
+.featuresPage1{
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 30rem;
+}
+
+/*---------------------------------------ABOUT US PAGE---------------------------------*/
+.aboutusPage1{
+    text-align: center;
+    font-size: larger;
+    margin-bottom:30rem;
+}
+
+/*---------------------------------------CONTACT PAGE---------------------------------*/
+.contactPage1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    margin-bottom:3rem;
+}
+.formularioContenedor{
+    width:60%;
+    border: solid rgb(94, 7, 7);
+    border-radius: 5px;
+    padding: 12px;
+}
+.formularioContenedor a{
+    background-color: rgb(94, 7, 7)
+}
+.formularioContenedor .form-control{
+    margin: 5px;
+}
+
+.formularioContenedor .espacio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-----------------------------------REACTIVO-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1150px){
+    .heroe h2{
+        font-size: 56px;
+    }
+    .heroe img{
+        align-content: center;
+        justify-content: center;
+        margin: 0px;
+        width:350px;
+        height:350px;
+    }
+
+    .textosHeroe h2{
+        font-size: 50px;
+    }
+    .textosHeroe p{
+        font-size: 15px;
+    }
+    
+    .features h2{
+        font-size: 45px;
+    }
+
+    .featuresContenedor h3{
+        font-size: 16px;
+    }
+
+    .featuresContenedor p{
+        font-size: 12px;
+    }
+
+    .video div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .video h2{
+        font-size: 45px;
+    }
+    .video p{
+        font-size: 16px;
+    }
+
+    .video iframe{
+        margin-top: 3rem;
+        width: 400px;
+        height: 280px;
+    }
+
+    .historias h3{
+        padding:2rem;
+        margin-bottom:0rem;
+    }
+        
+
+    .historias .historiasContenedor img{
+        width:100px;
+        height:90px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor1{
+        margin: 0px;
+        padding: 0px;
+    }
+    .historias .contenedor1 img{
+        margin: 0px;
+        margin-bottom: 10px;
+
+    }
+
+    .historias .historiasContenedor a{
+        padding:0px;
+        margin: 0px;
+    }
+
+    .historias{
+        height: 300px;
+    }
+
+
+    .preguntas{
+        padding-top:1rem;
+    }
+    .preguntas h3{
+        padding:0px;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:890px){
+    .heroe img{
+        width: 300px;
+        height: 300px;
+    }
+    .heroe h2{
+        font-size: 40px;
+    }
+
+    .features h2{
+        font-size: 40px;
+        padding-top: 3rem;
+    }
+
+    .video h2{
+        font-size: 40px;
+        padding-top: 3rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 1fr 1.9fr;
+        grid-template-areas:
+        "resources.img"
+        "resources"
+        "footer-icons"
+        "direction"
+        ;
+        height:min-content;
+    }
+
+    footer iframe{
+        width: 230px;
+        height:fit-content;
+    }
+
+    footer img{
+        margin: 16px;
+    }
+
+    footer .direction p{
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .preguntas{
+        padding-top:5rem;
+    }
+
+    .heroe div{
+        padding:2rem;
+        margin: 0px;
+    }
+
+    .features .featuresContenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+        "feature-create feature-update"
+        "feature-prioritize feature-deleate"
+        ; 
+    }
+
+    .historias .historiasContenedor{
+        height:auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 150px;
+        grid-template-areas:
+        ".contenedor1 .contenedor2 .contenedor3"
+        ".contenedor4 .contenedor5 .contenedor5"
+        ; 
+    }
+}
+
+@media screen and (max-width:695px) {
+    .heroe{
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        align-content: space-evenly;
+    }
+    .textosHeroe{
+        align-items:baseline;
+        align-content: space-between;
+    }
+    .heroe div{
+        padding:0px;
+        margin: 0px;
+    }
+    
+    .heroe img{
+        width: 230px;
+        height: auto;
+    }
+}
