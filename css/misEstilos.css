@@ -5,18 +5,15 @@
     box-sizing: border-box;
 }
 /*! ----------------------------------------- BODY -----------------------------*/
-
+body{
+    background-color: aliceblue;
+}
 /*! ---------------------------------------- HEADER ----------------------------*/
 header{
-    background-color:#b80b0b;
+    background-color: aliceblue;
     top: 0;
     z-index: 1;
     position:sticky;
-}
-
-header nav .navbar-expand{
-    color: aquamarine;
-
 }
 
 header .navbar-brand{
@@ -24,16 +21,11 @@ header .navbar-brand{
     font-weight: bold;
     font-style:oblique;
     color: rgb(94, 7, 7);
-    grid-column:1/4;
 }
 
-header div .container-fluid{
-    grid-column:4/6;
-    grid-row: 1/1;
-}
 
 header nav ul li{
-    font-size: 20px;
+    font-size:20px;
 }
 
 header nav ul li a:hover{
@@ -255,14 +247,37 @@ text-align: center;
 
 /*!--------------------------------------------FOOTER------------------------------------*/
 footer{
-    display: flex;
-    justify-content: space-evenly;
     background-color:rgb(99, 128, 154) ;
     text-align: center;
 }
 
+.footerContainer{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 0.5fr  2fr 2fr 3.5fr;
+    grid-template-areas:
+    "resourcesImg resources footerIcons direction";
+    width:100%;
+}
+
+.resourcesImg{
+    grid-area: resourcesImg;
+}
+.resources{
+    grid-area: resources;
+}
+.footerIcons{
+    grid-area: footerIcons;
+}
+.direction{
+    grid-area: direction;
+}
+
 .direction p{
-    text-align: justify
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    width: 90%;
 }
 
 footer h4{
@@ -273,14 +288,16 @@ footer h4{
 
 footer ul li a{
     color: rgba(19, 20, 21, 0.571);
-    margin: 15px;
     text-decoration: none;
 }
 
 footer ul li a:hover{
     color: rgb(19, 20, 21);
 }
-
+footer ul{
+    margin: 5px;
+    padding: 0px;
+}
 
 footer ul li{
     list-style: none;
@@ -288,8 +305,9 @@ footer ul li{
 }
 
 footer img{
-    height: 4rem;
-    margin: 2rem;
+    height: 10%;
+    width:fit-content;
+    margin: 10%;
 }
 
 .footerIcons img{
@@ -298,8 +316,8 @@ footer img{
 }
 
 footer iframe{
-width: 20rem;
-height: 20rem;
+width:90%;
+height:300px;
 padding: 1rem;
 border-radius: 20px;
 }
@@ -371,6 +389,30 @@ border-radius: 20px;
 
 
 /*-----------------------------------REACTIVO-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1490px){
+header nav ul li{
+    font-size: 19px;
+}
+}
+
+@media screen and (max-width:1412px){
+    header nav ul li{
+        font-size: 18px;
+    }
+    }
+
+@media screen and (max-width:1375px){
+        header nav ul li{
+            font-size: 17px;
+        }
+        }
+
+@media screen and (max-width:1335px){
+    header nav ul li{
+    font-size: 16px;
+    }        
+}
+
 @media screen and (max-width:1150px){
     .heroe h2{
         font-size: 56px;
@@ -388,6 +430,12 @@ border-radius: 20px;
     }
     .textosHeroe p{
         font-size: 15px;
+    }
+
+    .whatsapp{
+        position: fixed;
+        bottom:50px;
+        right:5px
     }
     
     .features h2{
@@ -481,32 +529,6 @@ border-radius: 20px;
         padding-top: 3rem;
     }
 
-    footer{
-        display: grid;
-        grid-template-columns: 0.1fr 1fr 1fr 1.9fr;
-        grid-template-areas:
-        "resources.img"
-        "resources"
-        "footer-icons"
-        "direction"
-        ;
-        height:min-content;
-    }
-
-    footer iframe{
-        width: 230px;
-        height:fit-content;
-    }
-
-    footer img{
-        margin: 16px;
-    }
-
-    footer .direction p{
-        text-align: center;
-        padding: 5px;
-    }
-}
 
 @media screen and (max-width:760px){
     .preguntas{
@@ -516,27 +538,6 @@ border-radius: 20px;
     .heroe div{
         padding:2rem;
         margin: 0px;
-    }
-
-    .features .featuresContenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px;
-        grid-template-areas:
-        "feature-create feature-update"
-        "feature-prioritize feature-deleate"
-        ; 
-    }
-
-    .historias .historiasContenedor{
-        height:auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 150px 150px;
-        grid-template-areas:
-        ".contenedor1 .contenedor2 .contenedor3"
-        ".contenedor4 .contenedor5 .contenedor5"
-        ; 
     }
 }
 
@@ -560,4 +561,5 @@ border-radius: 20px;
         width: 230px;
         height: auto;
     }
+}
 }
