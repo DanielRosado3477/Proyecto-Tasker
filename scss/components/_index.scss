@@ -1,0 +1,159 @@
+/*! ------------------------------- SECTION HEROE--------------------------------*/
+.heroe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    .textosHeroe{
+        width: 50%;
+        color: rgb(8, 8, 8);
+        font-size: large;
+        padding: 5rem;
+        h2{
+            color: rgb(0, 0, 0);
+            font-size: 4rem;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .imagenHeroe{
+            width: 50%;
+    color: rgb(8, 8, 8);
+    font-size: large;
+    padding: 5rem;
+        img{
+            width: 30rem;
+            height: 30rem;
+            border-radius: 10px;
+        }
+    }
+}
+
+.botones{
+    margin-bottom: 30px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    color: black;
+        a{
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(94, 7, 7);
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 4px;
+            font-size: 15px;
+            &:hover{
+                background-color: #3d0404b7;
+            }
+        }
+}
+/*!-------------------WhatsApp ICON-----------------------*/
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 7;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+}
+
+/*!--------------------------------Seccion features----------------------------------*/
+.features{
+    text-align: center;
+    background-color: rgb(231, 231, 230);
+    padding: 1rem;
+    .textosFeatures{
+        h2{
+            font-size: 50px;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+        p{
+            padding-bottom: 2rem;
+        }
+        }
+    }
+    .featuresContenedor{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "featureCreate featureUpdate featurePrioritize featureDelete";
+        margin-bottom: 1rem;
+        .featuresCreate{
+            grid-area: featureCreate;
+            height: 100%;
+        }
+        .featureUpdate{
+            grid-area: featureUpdate;
+            height:100%;
+        }
+        .featurePrioritize{
+            grid-area: featurePrioritize;
+            height:100%;
+        }
+        .featureDelete{
+            grid-area: featureDelete;
+            height:100%;
+        }
+    }
+
+/*!-------------------------------------------SECCION VIDEO-----------------------*/
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .videoContenedor{
+
+        h2{
+            font-size: 50px;
+            padding-top: 6rem;
+            text-align: center;
+        }
+        p{
+            font-size: larger;
+        }
+    }
+    div{
+        iframe{
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+/*! -----------------------------------------HISTORIAS DE EXITO----------------------*/
+.historias{
+    background-color: rgb(231, 231, 230);
+    h3{
+        font-size: 50px;
+        padding-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+/*! --------------------------------Sección preguntas frecuentes------------------------*/
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    z-index: 6;
+    h3{
+        font-size: 40px;
+        padding-top: 6rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}

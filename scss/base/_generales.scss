@@ -1,0 +1,176 @@
+/*RESET*/
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Squada+One&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Squada One", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+body p,a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*! ---------------------------------------- HEADER BOOTSTRAP ----------------------------*/
+header{
+    background-color: rgb(231, 231, 230);    
+    top: 0;
+    z-index:7;
+    position: sticky;
+    nav{
+        font-size:21px;
+        align-content:space-evenly;
+            .navbar-brand{
+                    font-size: 60px;
+                    font-weight: bold;
+                    font-style: oblique;
+                    color: rgb(94, 7, 7);      
+            }
+                        a{
+                            font-size:21px;
+                            align-content:space-evenly;
+                            &:hover{
+                                border-radius: 5px;
+                                background-color: rgba(250, 235, 215, 0.288);
+                                color: rgb(94, 7, 7);
+                                font-weight: bold;
+                            }
+                            }
+                        }
+        }
+/*! ---------------------------------------- HISTORIAS-CARROUSEL BOOTSTRAP ----------------------------*/
+.historias{
+    .container{
+        #sliderHistorias{
+            background-color: rgb(231, 231, 230);
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        margin-bottom: 90px;
+                    }
+                    .carousel-caption{
+                        a{
+                            color: aliceblue;
+                            text-decoration: none;
+                            background-color: rgb(94, 7, 7);
+                            border: 2px solid rgb(0, 0, 0);
+                            border-radius: 10px;
+                            padding: 4px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev-icon{
+                border-radius: 100px;
+                background-color: rgba(94, 7, 7, 0.367);
+            }
+            .carousel-control-next-icon{
+                border-radius: 100px;
+                background-color: rgba(94, 7, 7, 0.367);
+            }
+        }
+    }
+}
+/*! ---------------------------------------- ACCORDION BOOTSTRAP ----------------------------*/
+.preguntas{
+    .accordion{
+        .accordion-item{
+            h2{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                .accordion-button:not(.collapsed){
+                    background-color: rgba(94, 7, 7, 0.12);
+                }
+            }
+        }
+        .accordion-collapse{
+            .accordion-body{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        }
+    }
+}
+/*!--------------------------------------------FOOTER------------------------------------*/
+footer{
+    background-color: rgb(99, 128, 154);
+    text-align: center;
+    .footerContainer{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 0.5fr 2fr 2fr 3.5fr;
+        grid-template-areas:
+            "resourcesImg resources footerIcons direction";
+        width: 100%;
+        .resourcesImg{
+            grid-area: resourcesImg;
+            a{
+                img{
+                    height: 10%;
+                    width: fit-content;
+                    margin: 10%;
+                }
+            }
+        }
+        .resources{
+            grid-area: resources;
+            h3{
+                font-size: larger;
+                margin: 2rem;
+                color: aliceblue;
+            }
+            ul{
+                margin: 5px;
+                padding: 0px;
+                li{
+                    list-style: none;
+                    margin: 25px;
+                    a{
+                        color: rgba(19, 20, 21, 0.571);
+                        text-decoration: none;
+                        &:hover{
+                            color: rgb(42, 44, 46);
+                        }
+                    }
+                }
+            }
+        }
+        .footerIcons{
+            grid-area: footerIcons;
+            h3{
+                font-size: larger;
+                margin: 2rem;
+                color: aliceblue;
+            }
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .direction{
+            grid-area: direction;
+            h3{
+                font-size: larger;
+                margin: 2rem;
+                color: aliceblue;
+            }
+            p{
+                align-items: center;
+                align-content: center;
+                text-align: center;
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                height: 300px;
+                padding: 1rem;
+                border-radius: 20px;
+            }
+        }
+    }
+}

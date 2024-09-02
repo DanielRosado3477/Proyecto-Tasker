@@ -1,0 +1,470 @@
+/*-----------------------------------REACTIVO INDEX-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1490px) {
+    header nav ul li {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1412px) {
+    header nav ul li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1375px) {
+    header nav ul li {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .heroe .imagenHeroe img {
+        align-content: center;
+        justify-content: center;
+        margin: 0px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .heroe .textosHeroe h2 {
+        font-size: 50px;
+    }
+
+    .heroe .textosHeroe p {
+        font-size: 15px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        z-index: 6;
+    }
+
+    .features .textosFeatures h2 {
+        font-size: 45px;
+    }
+
+    .features .featuresContenedor h3 {
+        font-size: 16px;
+    }
+
+    .features .featuresContenedor p {
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    .video div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .video .videoContenedor h2 {
+        font-size: 45px;
+    }
+
+    .video .videoContenedor p {
+        font-size: 16px;
+    }
+
+    .video div iframe {
+        margin-top: 3rem;
+        width: 400px;
+        height: 280px;
+    }
+
+    .historias h3 {
+        font-size: 45px;
+        padding: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .historias .historiasContenedor img {
+        width: 100px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+    .historias .historiasContenedor a {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .preguntas {
+        padding-top: 1rem;
+    }
+
+    .preguntas h3 {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:961px) {
+    .features .featuresContenedor {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "featureCreate featureUpdate"
+            "featurePrioritize featureDelete";
+        align-content: center;
+    }
+
+    .features .featuresContenedor .featureCreate {
+        grid-area: featureCreate;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .features .featuresContenedor .featureUpdate {
+        grid-area: featureUpdate;
+        width: 100%;
+        height: 130px;
+    }
+
+    .features .featuresContenedor .featurePrioritize {
+        grid-area: featurePrioritize;
+        width: 100%;
+    }
+
+    .features .featuresContenedor .featureDelete {
+        grid-area: featureDelete;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .heroe .imagenHeroe img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .heroe .textosHeroe h2 {
+        font-size: 40px;
+    }
+
+    .features .textosFeatures h2 {
+        font-size: 40px;
+        padding-top: 3rem;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+    .video .videoContenedor h2 {
+        font-size: 40px;
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .heroe .imagenHeroe{
+        padding: 1rem;
+    }
+    .heroe .textosHeroe{
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width:695px) {
+    .heroe {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        text-align: center;
+    }
+
+    .heroe .textosHeroe {
+        width: 85%;
+        padding: 1rem;
+    }
+
+    .whatsapp img{
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        z-index: 6;
+    }
+
+    .features .featuresContenedor p{
+        margin-bottom: 1px;
+        padding-bottom: 3px;
+    }
+
+    .features .featuresContenedor img{
+        margin-bottom: 20px;
+    }
+    .featureCreate{
+        border:solid;
+        border-color: rgb(206, 204, 204);
+    }
+    .featureDelete{
+        border:solid;
+        border-color: rgb(206, 204, 204);
+    }
+    .featurePrioritize{
+        border:solid;
+        border-color: rgb(206, 204, 204);
+    }
+    .featureUpdate{
+        border:solid;
+        border-color: rgb(206, 204, 204);
+    }
+
+    footer .footerContainer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 0.5fr 2.5fr 2.5fr;
+        grid-template-areas:
+            "resourcesImg resources footerIcons"
+            "direction direction direction";
+        width: 100%;
+    }
+
+    footer .footerContainer .resourcesImg{
+        grid-area: resourcesImg;
+    }
+
+    footer .footerContainer .resources {
+        grid-area: resources;
+    }
+
+    footer .footerContainer .footerIcons {
+        grid-area: footerIcons;
+    }
+
+    footer .footerContainer .direction {
+        grid-area: direction;
+    }
+
+    footer .footerContainer .direction p {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer h3 {
+        font-size: larger;
+        margin: 0.5rem;
+        color: aliceblue;
+    }
+
+    footer .footerContainer .resources ul li a{
+        color: rgba(19, 20, 21, 0.571);
+        text-decoration: none;
+    }
+
+    footer .footerContainer .resources ul li a:hover {
+        color: rgb(19, 20, 21);
+    }
+
+    footer .footerContainer .resources ul{
+        margin: 2px;
+        padding: 0px;
+    }
+
+    footer .footerContainer .resources ul li {
+        list-style: none;
+        margin: 15px;
+    }
+
+    footer .footerContainer .footerIcons img {
+        width: 25px;
+        height: 25px;
+        margin: 10%;
+    }
+
+    footer .footerContainer .direction iframe {
+        width: 100%;
+        height: 250px;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:590px){
+    .heroe .imagenHeroe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .video div iframe {
+        margin-top: 2rem;
+        width: 350px;
+        height: 190px;
+    }
+
+    .preguntas h3 {
+        font-size: 23px;
+        margin-bottom: 3px;
+    }
+
+    .preguntas .accordion{
+        font-size: 13px;
+    }
+    .preguntas .accordion-button{
+        font-size: 15px;
+    }
+}
+/*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
+@media screen and (max-width:1200px){
+    .heroeContact .derecha .textosDerecha a{
+        top: -60px;
+        right:100px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contactPage1 .formularioContenedor{
+        width: 80%;
+    }
+    .heroeContact .botones .gift img{
+            position: relative;
+            left:30vh;
+            height: 20vh;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top: -60px;
+        right:90px;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .contactPage1 .formularioContenedor{
+    width: 90%;
+    }
+    .contactPage1 p{
+        width: 90%;
+        }
+    .heroeContact .derecha .textosDerecha p{
+        font-size: 15px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:800px){
+    .heroeContact .derecha .textosDerecha img{
+        right: -10px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top: -60px;
+        right:80px;
+    }
+}
+@media screen and (max-width:750px){
+    .heroeContact .derecha .textosDerecha img{
+        right: 10px;
+        top:0px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top:0px;
+        right:40px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .heroeContact .botones h1{
+    font-size: 40px;
+    }
+    .heroeContact .botones h2{
+    font-size: 18px;
+    }
+    .heroeContact .botones .gift img{
+    position: relative;
+    left:20vh;
+    height: 20vh;
+    }
+    .heroeContact .izquierda h2{
+    font-size: 25px;
+    }
+    .heroeContact .izquierda p{
+    font-size: 12px;
+    }
+}
+
+@media screen and (max-width:490px){
+    .contactPage1 h2{
+        font-size: 25px;
+    }
+    .contactPage1 p{
+        font-size: 15px;
+    }
+    .heroeContact .botones h2{
+        padding: 5%;
+    }
+    .heroeContact .botones .gift img{
+        position: relative;
+        left:15vh;
+        height: 10vh;
+        width: 130px;
+        height: 130px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        right: 15px;
+    }
+    .heroeContact .izquierda h2{
+        font-size: 20px;
+        }
+}
+/*---------------------------------------REACTIVO PRICING PAGE---------------------------------*/
+@media screen and (max-width:1000px){
+    .pricingHeroe .optionsContainer .freeOption{
+        margin: 1%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        margin: 1%;
+    }
+    .textosSecundarios .tituloSecundario{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:850px){
+    .pricingHeroe .textosPricing h1{
+        width: 80%;
+    }
+    .pricingHeroe .textosPricing p{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .freeOption ul{
+        width: 90%;
+    }
+}
+@media screen and (max-width:770px){
+    .textosSecundarios{
+    height:fit-content;
+    }
+}
+@media screen and (max-width:616px){
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction:column;
+    }
+    .pricingHeroe .textosPricing{
+        height: fit-content;
+    }
+    .pricingHeroe .textosPricing p{
+        margin-bottom: 5vh;
+    }
+    .textosSecundarios .parrafoSecundario{
+        width: 90%;
+    }
+}
+@media screen and (max-width:495px){
+    .pricingHeroe .textosPricing h1{
+        font-size: 35px;
+        margin-bottom: 5vh;
+    }
+    .pricingHeroe .textosPricing p{
+        font-size: 16px;
+    }
+    .textosSecundarios .tituloSecundario{
+        font-size: 30px;
+    }
+    .textosSecundarios .regreso a{
+        font-size: 14px;
+    }
+}
