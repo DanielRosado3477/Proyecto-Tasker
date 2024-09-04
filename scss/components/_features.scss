@@ -1,8 +1,162 @@
 .featuresPage1{
     text-align: center;
     font-size: larger;
-    margin-bottom: 30rem;
-    h1{
+    .featuresHeroe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 85vh;
+        h1{
+            font-size: 45px;
+            padding: 2.5%;
+            color: #5e0707;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+        p{
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 10vh;
+        }
+        .img{
+            position: fixed;
+            right: -40%;
+            top: -80%;
+        }
+        a{
+            width: 10vh;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgba(94, 7, 7, 0.756);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 4px;
+            font-size: 10px;
+            margin-bottom: 5%;
+        }
 
+    }
+    .featuresContainer{
+        display: flex;
+        flex-direction: row;
+        margin: 2.5%;
+        .androidFeature{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            border: solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 1px;
+            .inconoFeatures{
+                width:20px;
+            }
+            img{
+                width: 90%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+            }
+            .tituloAndroid{
+                color: #5e0707;
+            }
+            ul{
+                li{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }  
+            }
+            a{
+                width: 10vh;
+                color: aliceblue;
+                text-decoration: none;
+                background-color: rgba(94, 7, 7, 0.756);
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 4px;
+                font-size: 10px;
+                margin-bottom: 1vh;
+                &:hover{
+                    background-color: #3d0404b7;
+                }
+            }
+        }
+        .iosFeature{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            border: solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 1px;
+            .inconoFeatures{
+                width:20px;
+            }
+            .tituloIos{
+                color: #5e0707;
+            }
+            img{
+                width: 90%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+            }
+            ul{
+                li{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }  
+            }
+            a{
+                width: 10vh;
+                color: aliceblue;
+                text-decoration: none;
+                background-color: rgba(94, 7, 7, 0.756);
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 4px;
+                font-size: 10px;
+                margin-bottom: 1vh;
+                &:hover{
+                    background-color: #3d0404b7;
+                }
+            }
+        }
+        .desktopFeature{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            border: solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 1px;
+            .inconoFeatures{
+                width: 20px;
+            }
+            img{
+                width: 90%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+            }
+            ul{
+                li{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }  
+            }
+            a{
+                width: 10vh;
+                color: aliceblue;
+                text-decoration: none;
+                background-color: rgba(94, 7, 7, 0.756);
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 4px;
+                font-size: 10px;
+                margin-bottom: 1vh;
+                &:hover{
+                    background-color: #3d0404b7;
+                }
+            }
+        }
     }
 }

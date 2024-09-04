@@ -293,6 +293,10 @@
 }
 
 @media screen and (max-width:510px) {
+    .video .videoContenedor p{
+        text-align: center;
+        width: 90%;
+    }
     .video div iframe {
         margin-top: 2rem;
         width: 350px;
@@ -309,6 +313,16 @@
     }
     .preguntas .accordion-button{
         font-size: 15px;
+    }
+}
+@media screen and (max-width:400px){
+    .features .featuresContenedor .featureUpdate{
+        height: auto;
+    }
+    .video div iframe {
+        margin-top: 1rem;
+        width: 300px;
+        height: 200px;
     }
 }
 /*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
@@ -399,7 +413,6 @@
     .heroeContact .botones .gift img{
         position: relative;
         left:15vh;
-        height: 10vh;
         width: 130px;
         height: 130px;
     }
@@ -410,12 +423,23 @@
         font-size: 20px;
         }
 }
+@media screen and (max-width:380px){
+    .heroeContact .botones .gift img{
+        position: relative;
+        left: 12vh;
+        width: 130px;
+        height: 130px;
+    }
+}
 /*---------------------------------------REACTIVO PRICING PAGE---------------------------------*/
 @media screen and (max-width:1000px){
     .pricingHeroe .optionsContainer .freeOption{
         margin: 1%;
     }
     .pricingHeroe .optionsContainer .payOption{
+        margin: 1%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
         margin: 1%;
     }
     .textosSecundarios .tituloSecundario{
@@ -434,6 +458,20 @@
     }
 }
 @media screen and (max-width:770px){
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+    width: 60%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 60%;
+        }
+    .pricingHeroe .optionsContainer .proOption{
+            width: 60%;
+            }
     .textosSecundarios{
     height:fit-content;
     }
@@ -452,6 +490,20 @@
     .textosSecundarios .parrafoSecundario{
         width: 90%;
     }
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+        width: 70%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 70%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
+        width: 70%;
+    }
 }
 @media screen and (max-width:495px){
     .pricingHeroe .textosPricing h1{
@@ -466,5 +518,450 @@
     }
     .textosSecundarios .regreso a{
         font-size: 14px;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
+        width: 80%;
+    }
+}
+/*---------------------------------------REACTIVO FEATURES---------------------------------*/
+@media screen and (max-width:1378px){
+    .featuresPage1 .featuresContainer{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "androidFeature iosFeature"
+        "desktopFeature desktopFeature";
+    }
+    .featuresPage1 .featuresContainer .androidFeature{
+        grid-area:androidFeature;
+        height: fit-content;
+        margin: 10%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        grid-area:iosFeature;
+        height: fit-content;
+        margin: 10%;
+    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        grid-area:desktopFeature;
+        height: fit-content;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .featuresPage1 .featuresContainer{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "androidFeature "
+        "iosFeature"
+        "desktopFeature";
+    }
+    .featuresPage1 .featuresContainer .androidFeature{
+        grid-area:androidFeature;
+        height: fit-content;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        grid-area:iosFeature;
+        height: fit-content;
+        margin-left: 25%;
+        margin-right: 25%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        grid-area:desktopFeature;
+        height: fit-content;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+@media screen and (max-width:650px){
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        margin-left: 15%;
+        margin-right: 15%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width:470px){
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        margin-left: 10%;
+        margin-right: 10%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width:390px){
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        margin-left: 5%;
+        margin-right: 5%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+/*---------------------------------------REACTIVO ABOUTUS---------------------------------*/
+@media screen and (max-width:1000px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+        font-size: 50px;
+    }
+    .aboutusPage1 .aboutContainer .aboutHeroe p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .aboutContainer .story h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .story p{
+        font-size: 18px
+    }
+    .aboutusPage1 .aboutContainer .logoAbout h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .mission h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .mission p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .aboutContainer .vision h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .vision p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .allContainer .textosContainer h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .item1 h3{
+        font-size: 20px;
+    }
+    .aboutusPage1 .item2 h3{
+        font-size: 20px;
+    }
+    .aboutusPage1 .item3 h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .aboutusPage1 .aboutContainer{
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-rows: 300px 90px 330px fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "aboutHeroe aboutHeroe"
+        "logoAbout logoAbout"
+        "story story"
+        "mission vision";
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                padding: 1%;
+                margin-bottom: 5vh;
+            }
+            .logoAbout{
+                grid-area: logoAbout;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .story{
+                grid-area: story;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 0vh;
+                margin: 1vh;
+                margin-left: 10vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin: 1vh;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+            }
+    }
+}
+
+@media screen and (max-width:900px){
+    .aboutusPage1 .aboutContainer{
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-rows: 300px 90px 330px fit-content fit-content;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "aboutHeroe"
+        "logoAbout"
+        "story"
+        "mission"
+        "vision";
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                padding: 1%;
+                margin-bottom: 5vh;
+            }
+            .logoAbout{
+                grid-area: logoAbout;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .story{
+                grid-area: story;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 10vh;
+                margin-left: 10vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin-right: 10vh;
+                margin-left: 10vh;
+                margin-bottom: 10vh;
+            }
+    }
+    .aboutusPage1 .allContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+}
+@media screen and (max-width:600px){
+    .aboutusPage1 .aboutContainer{
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                padding: 1%;
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 4vh;
+            }
+            .logoAbout{
+                grid-area: logoAbout;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .story{
+                grid-area: story;
+                margin-right: 8vh;
+                margin-left: 8vh;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 10vh;
+            }
+    }
+    .aboutusPage1 .allContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 8vh;
+        margin-right: 8vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+}
+@media screen and (max-width:500px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+        font-size: 40px;
+    }
+    .aboutusPage1 .aboutContainer{
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                padding: 1%;
+                margin-right: 6vh;
+                margin-left: 6vh;
+                margin-bottom: 4vh;
+            }
+            .logoAbout{
+                grid-area: logoAbout;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .story{
+                grid-area: story;
+                margin-right: 6vh;
+                margin-left: 6vh;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 6vh;
+                margin-left: 6vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin-right: 6vh;
+                margin-left: 6vh;
+                margin-bottom: 10vh;
+            }
+    }
+    .aboutusPage1 .allContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 6vh;
+        margin-right: 6vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+    boutusPage1 .aboutContainer .aboutHeroe p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .aboutContainer .story h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .story p{
+        font-size: 15px
+    }
+    .aboutusPage1 .aboutContainer .logoAbout h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .mission h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .mission p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .aboutContainer .vision h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .vision p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .allContainer .textosContainer h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .item1 h3{
+        font-size: 18px;
+    }
+    .aboutusPage1 .item2 h3{
+        font-size: 18px;
+    }
+    .aboutusPage1 .item3 h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:500px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+    font-size: 35;
     }
 }

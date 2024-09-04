@@ -35,7 +35,9 @@ header {
         border-radius: 5px;
         background-color: rgba(250, 235, 215, 0.288);
         color: #5e0707;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: 0.5s;
+        transform: scale(1.01); }
 
 /*! ---------------------------------------- HISTORIAS-CARROUSEL BOOTSTRAP ----------------------------*/
 .historias .container #sliderHistorias {
@@ -127,10 +129,182 @@ footer {
         padding: 1rem;
         border-radius: 20px; }
 
-.aboutusPage1 h1 {
-  text-align: center;
-  font-size: larger;
-  margin-bottom: 30rem; }
+.aboutusPage1 {
+  background: #b3b8be;
+  background: linear-gradient(90deg, rgba(218, 223, 227, 0.936) 0%, rgba(160, 176, 183, 0.521) 15%);
+  padding: 1vh; }
+  .aboutusPage1 .aboutContainer {
+    display: grid;
+    grid-template-rows: fit-content 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "aboutHeroe aboutHeroe aboutHeroe aboutHeroe" "logoAbout story story story" "mission mission vision vision"; }
+    .aboutusPage1 .aboutContainer .aboutHeroe {
+      grid-area: aboutHeroe;
+      margin-top: 5vh;
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+      width: fit-content;
+      height: fit-content;
+      border: solid 2px;
+      border-color: #ae0909;
+      border-radius: 10px;
+      padding: 5%; }
+      .aboutusPage1 .aboutContainer .aboutHeroe h1 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 60px; }
+      .aboutusPage1 .aboutContainer .aboutHeroe p {
+        font-size: 20px;
+        text-align: justify; }
+    .aboutusPage1 .aboutContainer .logoAbout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-area: logoAbout;
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+      width: 75%;
+      border: solid 2px;
+      border-color: #ae0909;
+      border-radius: 10px;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .logoAbout img {
+        padding: 10%; }
+      .aboutusPage1 .aboutContainer .logoAbout h2 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 35px; }
+    .aboutusPage1 .aboutContainer .story {
+      grid-area: story;
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+      width: fit-content;
+      border: solid 2px;
+      border-color: #ae0909;
+      border-radius: 10px;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .story h2 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 35px; }
+      .aboutusPage1 .aboutContainer .story p {
+        font-size: 20px;
+        text-align: justify; }
+    .aboutusPage1 .aboutContainer .mission {
+      grid-area: mission;
+      width: 80%;
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+      width: fit-content;
+      border: solid 2px;
+      border-color: #ae0909;
+      border-radius: 10px;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .mission h2 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 35px; }
+      .aboutusPage1 .aboutContainer .mission p {
+        font-size: 20px;
+        text-align: justify; }
+    .aboutusPage1 .aboutContainer .vision {
+      grid-area: vision;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+      width: fit-content;
+      border: solid 2px;
+      border-color: #ae0909;
+      border-radius: 10px;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .vision h2 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 35px; }
+      .aboutusPage1 .aboutContainer .vision p {
+        font-size: 20px;
+        text-align: justify; }
+  .aboutusPage1 .allContainer {
+    display: grid;
+    border: solid 2px;
+    border-color: #ae0909;
+    border-radius: 10px;
+    padding: 5%;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    grid-template-rows: 10vh 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "textosContainer textosContainer textosContainer" "item1 item2 item3";
+    align-items: center;
+    align-content: center; }
+    .aboutusPage1 .allContainer .textosContainer {
+      text-align: center;
+      grid-area: textosContainer;
+      display: flex;
+      align-items: center;
+      align-content: center; }
+      .aboutusPage1 .allContainer .textosContainer h2 {
+        color: rgba(94, 7, 7, 0.858);
+        font-size: 35px; }
+  .aboutusPage1 .item1 {
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    width: 90%;
+    height: 80%;
+    border: solid 2px;
+    border-color: #190000;
+    border-radius: 10px;
+    padding: 5%; }
+    .aboutusPage1 .item1:hover {
+      transition: 1s;
+      transform: scale(1.01);
+      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    .aboutusPage1 .item1 h3 {
+      height: 30%; }
+  .aboutusPage1 .item2 {
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    height: 80%;
+    border: solid 2px;
+    border-color: #190000;
+    border-radius: 10px;
+    padding: 5%; }
+    .aboutusPage1 .item2:hover {
+      transition: 1s;
+      transform: scale(1.01);
+      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    .aboutusPage1 .item2 h3 {
+      height: 30%; }
+  .aboutusPage1 .item3 {
+    grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    height: 80%;
+    border: solid 2px;
+    border-color: #190000;
+    border-radius: 10px;
+    padding: 5%; }
+    .aboutusPage1 .item3:hover {
+      transition: 1s;
+      transform: scale(1.01);
+      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    .aboutusPage1 .item3 h3 {
+      height: 30%; }
 
 .heroeContact {
   display: grid;
@@ -245,8 +419,132 @@ footer {
 
 .featuresPage1 {
   text-align: center;
-  font-size: larger;
-  margin-bottom: 30rem; }
+  font-size: larger; }
+  .featuresPage1 .featuresHeroe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh; }
+    .featuresPage1 .featuresHeroe h1 {
+      font-size: 45px;
+      padding: 2.5%;
+      color: #5e0707;
+      text-align: center;
+      margin-bottom: 10vh; }
+    .featuresPage1 .featuresHeroe p {
+      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+      margin-bottom: 10vh; }
+    .featuresPage1 .featuresHeroe .img {
+      position: fixed;
+      right: -40%;
+      top: -80%; }
+    .featuresPage1 .featuresHeroe a {
+      width: 10vh;
+      color: aliceblue;
+      text-decoration: none;
+      background-color: rgba(94, 7, 7, 0.756);
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 4px;
+      font-size: 10px;
+      margin-bottom: 5%; }
+  .featuresPage1 .featuresContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2.5%; }
+    .featuresPage1 .featuresContainer .androidFeature {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      border: solid;
+      border-color: #5e0707;
+      border-radius: 10px;
+      margin: 1px; }
+      .featuresPage1 .featuresContainer .androidFeature .inconoFeatures {
+        width: 20px; }
+      .featuresPage1 .featuresContainer .androidFeature img {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%; }
+      .featuresPage1 .featuresContainer .androidFeature .tituloAndroid {
+        color: #5e0707; }
+      .featuresPage1 .featuresContainer .androidFeature ul li {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .featuresPage1 .featuresContainer .androidFeature a {
+        width: 10vh;
+        color: aliceblue;
+        text-decoration: none;
+        background-color: rgba(94, 7, 7, 0.756);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 10px;
+        margin-bottom: 1vh; }
+        .featuresPage1 .featuresContainer .androidFeature a:hover {
+          background-color: #3d0404b7; }
+    .featuresPage1 .featuresContainer .iosFeature {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      border: solid;
+      border-color: #5e0707;
+      border-radius: 10px;
+      margin: 1px; }
+      .featuresPage1 .featuresContainer .iosFeature .inconoFeatures {
+        width: 20px; }
+      .featuresPage1 .featuresContainer .iosFeature .tituloIos {
+        color: #5e0707; }
+      .featuresPage1 .featuresContainer .iosFeature img {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%; }
+      .featuresPage1 .featuresContainer .iosFeature ul li {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .featuresPage1 .featuresContainer .iosFeature a {
+        width: 10vh;
+        color: aliceblue;
+        text-decoration: none;
+        background-color: rgba(94, 7, 7, 0.756);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 10px;
+        margin-bottom: 1vh; }
+        .featuresPage1 .featuresContainer .iosFeature a:hover {
+          background-color: #3d0404b7; }
+    .featuresPage1 .featuresContainer .desktopFeature {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      border: solid;
+      border-color: #5e0707;
+      border-radius: 10px;
+      margin: 1px; }
+      .featuresPage1 .featuresContainer .desktopFeature .inconoFeatures {
+        width: 20px; }
+      .featuresPage1 .featuresContainer .desktopFeature img {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%; }
+      .featuresPage1 .featuresContainer .desktopFeature ul li {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .featuresPage1 .featuresContainer .desktopFeature a {
+        width: 10vh;
+        color: aliceblue;
+        text-decoration: none;
+        background-color: rgba(94, 7, 7, 0.756);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 10px;
+        margin-bottom: 1vh; }
+        .featuresPage1 .featuresContainer .desktopFeature a:hover {
+          background-color: #3d0404b7; }
 
 /*! ------------------------------- SECTION HEROE--------------------------------*/
 .heroe {
@@ -387,7 +685,7 @@ footer {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    height: 60vh; }
+    height: 70vh; }
     .pricingHeroe .textosPricing h1 {
       font-size: 45px;
       padding: 2.5%;
@@ -417,17 +715,24 @@ footer {
     display: flex;
     align-items: center;
     align-content: center;
-    width: 80%; }
+    width: 100vw;
+    height: 65vh; }
     .pricingHeroe .optionsContainer .freeOption {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 60vh;
+      height: 100%;
       width: 100%;
       border: 2px solid;
       border-color: #5e0707;
       border-radius: 10px;
       margin: 5%; }
+      .pricingHeroe .optionsContainer .freeOption:hover {
+        transition: 1s;
+        transform: scale(1.01);
+        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
       .pricingHeroe .optionsContainer .freeOption img {
         padding: 5%; }
       .pricingHeroe .optionsContainer .freeOption ul {
@@ -447,12 +752,18 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 60vh;
+      height: 100%;
       width: 100%;
       border: 2px solid;
       border-color: #5e0707;
       border-radius: 10px;
       margin: 5%; }
+      .pricingHeroe .optionsContainer .payOption:hover {
+        transition: 1s;
+        transform: scale(1.01);
+        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
       .pricingHeroe .optionsContainer .payOption img {
         padding: 5%; }
       .pricingHeroe .optionsContainer .payOption ul {
@@ -468,13 +779,44 @@ footer {
         font-size: 10px; }
         .pricingHeroe .optionsContainer .payOption .botones:hover {
           background-color: #3d0404b7; }
+    .pricingHeroe .optionsContainer .proOption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      border: 2px solid;
+      border-color: #5e0707;
+      border-radius: 10px;
+      margin: 5%; }
+      .pricingHeroe .optionsContainer .proOption:hover {
+        transition: 1s;
+        transform: scale(1.01);
+        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+      .pricingHeroe .optionsContainer .proOption img {
+        padding: 5%; }
+      .pricingHeroe .optionsContainer .proOption ul {
+        height: 30%; }
+      .pricingHeroe .optionsContainer .proOption .botones {
+        width: 10vh;
+        color: aliceblue;
+        text-decoration: none;
+        background-color: rgba(94, 7, 7, 0.756);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 10px; }
+        .pricingHeroe .optionsContainer .proOption .botones:hover {
+          background-color: #3d0404b7; }
 
 .textosSecundarios {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  height: 60vh;
+  height: fit-content;
   margin-top: 10vh; }
   .textosSecundarios .tituloSecundario {
     width: 80%;
@@ -505,7 +847,7 @@ footer {
     .textosSecundarios .regreso a {
       font-size: 18px;
       color: black;
-      width: 15vh;
+      width: fit-content;
       text-decoration: none;
       text-decoration: none;
       text-align: center;
@@ -703,6 +1045,9 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 510px) {
+  .video .videoContenedor p {
+    text-align: center;
+    width: 90%; }
   .video div iframe {
     margin-top: 2rem;
     width: 350px;
@@ -714,6 +1059,14 @@ footer {
     font-size: 13px; }
   .preguntas .accordion-button {
     font-size: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .features .featuresContenedor .featureUpdate {
+    height: auto; }
+  .video div iframe {
+    margin-top: 1rem;
+    width: 300px;
+    height: 200px; } }
 
 /*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
 @media screen and (max-width: 1200px) {
@@ -780,7 +1133,6 @@ footer {
   .heroeContact .botones .gift img {
     position: relative;
     left: 15vh;
-    height: 10vh;
     width: 130px;
     height: 130px; }
   .heroeContact .derecha .textosDerecha a {
@@ -788,11 +1140,20 @@ footer {
   .heroeContact .izquierda h2 {
     font-size: 20px; } }
 
+@media screen and (max-width: 380px) {
+  .heroeContact .botones .gift img {
+    position: relative;
+    left: 12vh;
+    width: 130px;
+    height: 130px; } }
+
 /*---------------------------------------REACTIVO PRICING PAGE---------------------------------*/
 @media screen and (max-width: 1000px) {
   .pricingHeroe .optionsContainer .freeOption {
     margin: 1%; }
   .pricingHeroe .optionsContainer .payOption {
+    margin: 1%; }
+  .pricingHeroe .optionsContainer .proOption {
     margin: 1%; }
   .textosSecundarios .tituloSecundario {
     font-size: 45px; } }
@@ -806,6 +1167,16 @@ footer {
     width: 90%; } }
 
 @media screen and (max-width: 770px) {
+  .pricingHeroe .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .pricingHeroe .optionsContainer .freeOption {
+    width: 60%; }
+  .pricingHeroe .optionsContainer .payOption {
+    width: 60%; }
+  .pricingHeroe .optionsContainer .proOption {
+    width: 60%; }
   .textosSecundarios {
     height: fit-content; } }
 
@@ -818,7 +1189,17 @@ footer {
   .pricingHeroe .textosPricing p {
     margin-bottom: 5vh; }
   .textosSecundarios .parrafoSecundario {
-    width: 90%; } }
+    width: 90%; }
+  .pricingHeroe .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .pricingHeroe .optionsContainer .freeOption {
+    width: 70%; }
+  .pricingHeroe .optionsContainer .payOption {
+    width: 70%; }
+  .pricingHeroe .optionsContainer .proOption {
+    width: 70%; } }
 
 @media screen and (max-width: 495px) {
   .pricingHeroe .textosPricing h1 {
@@ -829,4 +1210,347 @@ footer {
   .textosSecundarios .tituloSecundario {
     font-size: 30px; }
   .textosSecundarios .regreso a {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .pricingHeroe .optionsContainer .freeOption {
+    width: 80%; }
+  .pricingHeroe .optionsContainer .payOption {
+    width: 80%; }
+  .pricingHeroe .optionsContainer .proOption {
+    width: 80%; } }
+
+/*---------------------------------------REACTIVO FEATURES---------------------------------*/
+@media screen and (max-width: 1378px) {
+  .featuresPage1 .featuresContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "androidFeature iosFeature" "desktopFeature desktopFeature"; }
+  .featuresPage1 .featuresContainer .androidFeature {
+    grid-area: androidFeature;
+    height: fit-content;
+    margin: 10%; }
+  .featuresPage1 .featuresContainer .iosFeature {
+    grid-area: iosFeature;
+    height: fit-content;
+    margin: 10%; }
+  .featuresPage1 .featuresContainer .desktopFeature {
+    grid-area: desktopFeature;
+    height: fit-content;
+    margin-left: 25%;
+    margin-right: 25%; } }
+
+@media screen and (max-width: 850px) {
+  .featuresPage1 .featuresContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "androidFeature " "iosFeature" "desktopFeature"; }
+  .featuresPage1 .featuresContainer .androidFeature {
+    grid-area: androidFeature;
+    height: fit-content;
+    margin-left: 25%;
+    margin-right: 25%; }
+  .featuresPage1 .featuresContainer .iosFeature {
+    grid-area: iosFeature;
+    height: fit-content;
+    margin-left: 25%;
+    margin-right: 25%; }
+  .featuresPage1 .featuresContainer .desktopFeature {
+    grid-area: desktopFeature;
+    height: fit-content;
+    margin-left: 25%;
+    margin-right: 25%; } }
+
+@media screen and (max-width: 650px) {
+  .featuresPage1 .featuresContainer .androidFeature {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .featuresPage1 .featuresContainer .iosFeature {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .featuresPage1 .featuresContainer .desktopFeature {
+    margin-left: 15%;
+    margin-right: 15%; } }
+
+@media screen and (max-width: 470px) {
+  .featuresPage1 .featuresContainer .androidFeature {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .featuresPage1 .featuresContainer .iosFeature {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .featuresPage1 .featuresContainer .desktopFeature {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
+@media screen and (max-width: 390px) {
+  .featuresPage1 .featuresContainer .androidFeature {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .featuresPage1 .featuresContainer .iosFeature {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .featuresPage1 .featuresContainer .desktopFeature {
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+/*---------------------------------------REACTIVO ABOUTUS---------------------------------*/
+@media screen and (max-width: 1000px) {
+  .aboutusPage1 .aboutContainer .aboutHeroe h1 {
+    font-size: 50px; }
+  .aboutusPage1 .aboutContainer .aboutHeroe p {
+    font-size: 18px; }
+  .aboutusPage1 .aboutContainer .story h2 {
+    font-size: 30px; }
+  .aboutusPage1 .aboutContainer .story p {
+    font-size: 18px; }
+  .aboutusPage1 .aboutContainer .logoAbout h2 {
+    font-size: 30px; }
+  .aboutusPage1 .aboutContainer .mission h2 {
+    font-size: 30px; }
+  .aboutusPage1 .aboutContainer .mission p {
+    font-size: 18px; }
+  .aboutusPage1 .aboutContainer .vision h2 {
+    font-size: 30px; }
+  .aboutusPage1 .aboutContainer .vision p {
+    font-size: 18px; }
+  .aboutusPage1 .allContainer .textosContainer h2 {
+    font-size: 30px; }
+  .aboutusPage1 .item1 h3 {
+    font-size: 20px; }
+  .aboutusPage1 .item2 h3 {
+    font-size: 20px; }
+  .aboutusPage1 .item3 h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .aboutusPage1 .aboutContainer {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-rows: 300px 90px 330px fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "aboutHeroe aboutHeroe" "logoAbout logoAbout" "story story" "mission vision"; }
+    .aboutusPage1 .aboutContainer .aboutHeroe {
+      grid-area: aboutHeroe;
+      padding: 1%;
+      margin-bottom: 5vh; }
+    .aboutusPage1 .aboutContainer .logoAbout {
+      grid-area: logoAbout;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0vh;
+      width: 25%;
+      height: fit-content;
+      border: none;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .logoAbout img {
+        align-items: center;
+        padding: 1%; }
+    .aboutusPage1 .aboutContainer .story {
+      grid-area: story; }
+    .aboutusPage1 .aboutContainer .mission {
+      grid-area: mission;
+      height: 90%;
+      margin-right: 0vh;
+      margin: 1vh;
+      margin-left: 10vh;
+      margin-bottom: 10vh; }
+    .aboutusPage1 .aboutContainer .vision {
+      grid-area: vision;
+      height: 90%;
+      margin: 1vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh; } }
+
+@media screen and (max-width: 900px) {
+  .aboutusPage1 .aboutContainer {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-rows: 300px 90px 330px fit-content fit-content;
+    grid-template-columns: 1fr;
+    grid-template-areas: "aboutHeroe" "logoAbout" "story" "mission" "vision"; }
+    .aboutusPage1 .aboutContainer .aboutHeroe {
+      grid-area: aboutHeroe;
+      padding: 1%;
+      margin-bottom: 5vh; }
+    .aboutusPage1 .aboutContainer .logoAbout {
+      grid-area: logoAbout;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0vh;
+      width: 25%;
+      height: fit-content;
+      border: none;
+      padding: 1%; }
+      .aboutusPage1 .aboutContainer .logoAbout img {
+        align-items: center;
+        padding: 1%; }
+    .aboutusPage1 .aboutContainer .story {
+      grid-area: story; }
+    .aboutusPage1 .aboutContainer .mission {
+      grid-area: mission;
+      height: 90%;
+      margin-right: 10vh;
+      margin-left: 10vh;
+      margin-bottom: 10vh; }
+    .aboutusPage1 .aboutContainer .vision {
+      grid-area: vision;
+      height: 90%;
+      margin-right: 10vh;
+      margin-left: 10vh;
+      margin-bottom: 10vh; }
+  .aboutusPage1 .allContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    border-color: #ae0909;
+    border-radius: 10px;
+    padding: 5%;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    align-items: center;
+    align-content: center; }
+  .aboutusPage1 .item1 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item2 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item3 {
+    margin-bottom: 3vh; } }
+
+@media screen and (max-width: 600px) {
+  .aboutusPage1 .aboutContainer .aboutHeroe {
+    grid-area: aboutHeroe;
+    padding: 1%;
+    margin-right: 8vh;
+    margin-left: 8vh;
+    margin-bottom: 4vh; }
+  .aboutusPage1 .aboutContainer .logoAbout {
+    grid-area: logoAbout;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0vh;
+    width: 25%;
+    height: fit-content;
+    border: none;
+    padding: 1%; }
+    .aboutusPage1 .aboutContainer .logoAbout img {
+      align-items: center;
+      padding: 1%; }
+  .aboutusPage1 .aboutContainer .story {
+    grid-area: story;
+    margin-right: 8vh;
+    margin-left: 8vh; }
+  .aboutusPage1 .aboutContainer .mission {
+    grid-area: mission;
+    height: 90%;
+    margin-right: 8vh;
+    margin-left: 8vh;
+    margin-bottom: 10vh; }
+  .aboutusPage1 .aboutContainer .vision {
+    grid-area: vision;
+    height: 90%;
+    margin-right: 8vh;
+    margin-left: 8vh;
+    margin-bottom: 10vh; }
+  .aboutusPage1 .allContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    border-color: #ae0909;
+    border-radius: 10px;
+    padding: 5%;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    align-items: center;
+    align-content: center; }
+  .aboutusPage1 .item1 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item2 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item3 {
+    margin-bottom: 3vh; } }
+
+@media screen and (max-width: 500px) {
+  .aboutusPage1 .aboutContainer .aboutHeroe h1 {
+    font-size: 40px; }
+  .aboutusPage1 .aboutContainer .aboutHeroe {
+    grid-area: aboutHeroe;
+    padding: 1%;
+    margin-right: 6vh;
+    margin-left: 6vh;
+    margin-bottom: 4vh; }
+  .aboutusPage1 .aboutContainer .logoAbout {
+    grid-area: logoAbout;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0vh;
+    width: 25%;
+    height: fit-content;
+    border: none;
+    padding: 1%; }
+    .aboutusPage1 .aboutContainer .logoAbout img {
+      align-items: center;
+      padding: 1%; }
+  .aboutusPage1 .aboutContainer .story {
+    grid-area: story;
+    margin-right: 6vh;
+    margin-left: 6vh; }
+  .aboutusPage1 .aboutContainer .mission {
+    grid-area: mission;
+    height: 90%;
+    margin-right: 6vh;
+    margin-left: 6vh;
+    margin-bottom: 10vh; }
+  .aboutusPage1 .aboutContainer .vision {
+    grid-area: vision;
+    height: 90%;
+    margin-right: 6vh;
+    margin-left: 6vh;
+    margin-bottom: 10vh; }
+  .aboutusPage1 .allContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    border-color: #ae0909;
+    border-radius: 10px;
+    padding: 5%;
+    margin-left: 6vh;
+    margin-right: 6vh;
+    align-items: center;
+    align-content: center; }
+  .aboutusPage1 .item1 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item2 {
+    margin-bottom: 3vh; }
+  .aboutusPage1 .item3 {
+    margin-bottom: 3vh; }
+  boutusPage1 .aboutContainer .aboutHeroe p {
+    font-size: 15px; }
+  .aboutusPage1 .aboutContainer .story h2 {
+    font-size: 28px; }
+  .aboutusPage1 .aboutContainer .story p {
+    font-size: 15px; }
+  .aboutusPage1 .aboutContainer .logoAbout h2 {
+    font-size: 28px; }
+  .aboutusPage1 .aboutContainer .mission h2 {
+    font-size: 28px; }
+  .aboutusPage1 .aboutContainer .mission p {
+    font-size: 15px; }
+  .aboutusPage1 .aboutContainer .vision h2 {
+    font-size: 28px; }
+  .aboutusPage1 .aboutContainer .vision p {
+    font-size: 15px; }
+  .aboutusPage1 .allContainer .textosContainer h2 {
+    font-size: 28px; }
+  .aboutusPage1 .item1 h3 {
+    font-size: 18px; }
+  .aboutusPage1 .item2 h3 {
+    font-size: 18px; }
+  .aboutusPage1 .item3 h3 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  .aboutusPage1 .aboutContainer .aboutHeroe h1 {
+    font-size: 35; } }

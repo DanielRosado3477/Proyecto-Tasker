@@ -1,35 +1,89 @@
-.pricingHeroe{
+.pricingHeroe {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
     align-items: center;
     text-align: justify;
-    .textosPricing{
+
+    .textosPricing {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
-        height: 60vh;
-        h1{
+        height: 70vh;
+
+        h1 {
             font-size: 45px;
-            padding: 2.5%;            
+            padding: 2.5%;
             color: #5e0707;
             text-align: center;
             margin-bottom: 10vh;
         }
-        p{
+
+        p {
             text-align: center;
             font-size: larger;
             font-weight: bold;
             margin-bottom: 10vh;
         }
-        img{
+
+        img {
             width: 600px;
             height: 600px;
         }
-        .botones{
+
+        .botones {
             width: 10vh;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgba(94, 7, 7, 0.756);
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 4px;
+            font-size: 10px;
+
+            &:hover {
+                background-color: #3d0404b7;
+            }
+        }
+    }
+
+    .optionsContainer {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: 65vh;
+
+        .freeOption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 5%;
+            &:hover {
+                transition: 1s;
+                transform: scale(1.01);
+                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+            }
+
+            img {
+                padding: 5%;
+            }
+
+            ul {
+                height: 30%;
+            }
+
+            .botones {
+                width: 10vh;
                 color: aliceblue;
                 text-decoration: none;
                 background-color: rgba(94, 7, 7, 0.756);
@@ -37,99 +91,121 @@
                 border-radius: 10px;
                 padding: 4px;
                 font-size: 10px;
-                &:hover{
+
+                &:hover {
                     background-color: #3d0404b7;
                 }
+            }
         }
-    }
-    .optionsContainer{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        width: 80%;
-        .freeOption{
+
+        .payOption {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 60vh;
+            height: 100%;
             width: 100%;
             border: 2px solid;
             border-color: #5e0707;
             border-radius: 10px;
             margin: 5%;
-            img{
-            padding: 5%;
+            &:hover {
+                transition: 1s;
+                transform: scale(1.01);
+                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
             }
-            ul{
+            img {
+                padding: 5%;
+            }
+
+            ul {
                 height: 30%;
             }
-            .botones{
-                    width: 10vh;
-                        color: aliceblue;
-                        text-decoration: none;
-                        background-color: rgba(94, 7, 7, 0.756);
-                        border: 2px solid rgb(0, 0, 0);
-                        border-radius: 10px;
-                        padding: 4px;
-                        font-size: 10px;
-                        &:hover{
-                            background-color: #3d0404b7;
-                        }
-                }
-        }
-        .payOption{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 60vh;
-            width: 100%;
-            border: 2px solid;
-            border-color: #5e0707;
-            border-radius: 10px;
-            margin: 5%;
-            img{
-            padding: 5%;
-            }
-            ul{
-                height: 30%;
-            }
-            .botones{
+
+            .botones {
                 width: 10vh;
-                    color: aliceblue;
-                    text-decoration: none;
-                    background-color: rgba(94, 7, 7, 0.756);
-                    border: 2px solid rgb(0, 0, 0);
-                    border-radius: 10px;
-                    padding: 4px;
-                    font-size: 10px;
-                    &:hover{
-                        background-color: #3d0404b7;
-                    }
+                color: aliceblue;
+                text-decoration: none;
+                background-color: rgba(94, 7, 7, 0.756);
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 4px;
+                font-size: 10px;
+
+                &:hover {
+                    background-color: #3d0404b7;
+                }
+            }
+        }
+        .proOption{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 5%;
+            &:hover {
+                transition: 1s;
+                transform: scale(1.01);
+                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+            }
+            img {
+                padding: 5%;
+            }
+
+            ul {
+                height: 30%;
+            }
+
+            .botones {
+                width: 10vh;
+                color: aliceblue;
+                text-decoration: none;
+                background-color: rgba(94, 7, 7, 0.756);
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 4px;
+                font-size: 10px;
+
+                &:hover {
+                    background-color: #3d0404b7;
+                }
             }
         }
     }
 }
-.textosSecundarios{
+
+.textosSecundarios {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    height: 60vh;
+    height: fit-content;
     margin-top: 10vh;
-    .tituloSecundario{
-        width: 80%;;
+
+    .tituloSecundario {
+        width: 80%;
+        ;
         text-align: center;
         font-size: 50px;
         color: #5e0707ae;
         font-weight: bold;
 
     }
-    .parrafoSecundario{
+
+    .parrafoSecundario {
         text-align: center;
         margin-bottom: 5%;
         font-style: italic;
     }
-    .botones{
+
+    .botones {
         width: 10vh;
         color: aliceblue;
         text-decoration: none;
@@ -139,23 +215,27 @@
         padding: 4px;
         font-size: 10px;
         margin-bottom: 10vh;
-        &:hover{
+
+        &:hover {
             background-color: #3d0404b7;
         }
     }
-    .regreso{
+
+    .regreso {
         display: flex;
         align-items: center;
         align-content: center;
-        a{
+
+        a {
             font-size: 18px;
             color: black;
-            width: 15vh;
+            width: fit-content;
             text-decoration: none;
             text-decoration: none;
             text-align: center;
             padding: 4px;
-            &:hover{
+
+            &:hover {
                 background-color: #ebe0e067;
                 border-radius: 10px;
             }
