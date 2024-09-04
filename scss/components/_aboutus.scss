@@ -18,10 +18,7 @@
                 margin-bottom: 10vh;
                 width:fit-content;
                 height: fit-content;
-                border: solid 2px;
-                border-color:rgb(174, 9, 9);
-                border-radius: 10px;
-                padding: 5%;
+                @extend %bordesTarjetas;
                 h1{
                     color: rgba(94, 7, 7, 0.858);
                     font-size: 60px;
@@ -40,9 +37,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:75%;
-                border: solid 2px;
-                border-color:rgb(174, 9, 9);
-                border-radius: 10px;
+                @extend %bordesTarjetas;
                 padding: 1%;
                 img{
                     padding: 10%;
@@ -58,9 +53,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                border: solid 2px;
-                border-color:rgb(174, 9, 9);
-                border-radius: 10px;
+                @extend %bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -78,9 +71,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                border: solid 2px;
-                border-color:rgb(174, 9, 9);
-                border-radius: 10px;
+                @extend %bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -96,9 +87,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                border: solid 2px;
-                border-color:rgb(174, 9, 9);
-                border-radius: 10px;
+                @extend %bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -112,10 +101,7 @@
         }
         .allContainer{
             display: grid;
-            border: solid 2px;
-            border-color:rgb(174, 9, 9);
-            border-radius: 10px;
-            padding: 5%;
+            @extend %bordesTarjetas;
             margin-left: 10vh;
             margin-right: 10vh;
             grid-template-rows:10vh 30vh;
@@ -148,16 +134,10 @@
             text-align: center;
             width: 90%;
             height: 80%;
-            border: solid 2px;
+            @extend %bordesTarjetas;
             border-color:rgb(25, 0, 0);
-            border-radius: 10px;
-            padding: 5%;
             &:hover{
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
             h3{
                 height: 30%;
@@ -171,16 +151,10 @@
             align-content: center;
             width: 90%;
             height: 80%;
-            border: solid 2px;
+            @extend %bordesTarjetas;
             border-color:rgb(25, 0, 0);
-            border-radius: 10px;
-            padding: 5%;
             &:hover{
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
             h3{
                 height: 30%;
@@ -194,16 +168,10 @@
             align-content: center;
             width: 90%;
             height: 80%;
-            border: solid 2px;
+            @extend %bordesTarjetas;
             border-color:rgb(25, 0, 0);
-            border-radius: 10px;
-            padding: 5%;
             &:hover{
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
             h3{
                 height: 30%;

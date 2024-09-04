@@ -34,18 +34,7 @@
         }
 
         .botones {
-            width: 10vh;
-            color: aliceblue;
-            text-decoration: none;
-            background-color: rgba(94, 7, 7, 0.756);
-            border: 2px solid rgb(0, 0, 0);
-            border-radius: 10px;
-            padding: 4px;
-            font-size: 10px;
-
-            &:hover {
-                background-color: #3d0404b7;
-            }
+            @extend %botones,
         }
     }
 
@@ -67,34 +56,19 @@
             border-radius: 10px;
             margin: 5%;
             &:hover {
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
-
             img {
                 padding: 5%;
             }
-
             ul {
                 height: 30%;
             }
-
+            li{
+                width: 98%;
+            }
             .botones {
-                width: 10vh;
-                color: aliceblue;
-                text-decoration: none;
-                background-color: rgba(94, 7, 7, 0.756);
-                border: 2px solid rgb(0, 0, 0);
-                border-radius: 10px;
-                padding: 4px;
-                font-size: 10px;
-
-                &:hover {
-                    background-color: #3d0404b7;
-                }
+                @extend %botones;
             }
         }
 
@@ -109,33 +83,19 @@
             border-radius: 10px;
             margin: 5%;
             &:hover {
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
             img {
                 padding: 5%;
             }
-
             ul {
                 height: 30%;
             }
-
+            li{
+                width: 98%;
+            }
             .botones {
-                width: 10vh;
-                color: aliceblue;
-                text-decoration: none;
-                background-color: rgba(94, 7, 7, 0.756);
-                border: 2px solid rgb(0, 0, 0);
-                border-radius: 10px;
-                padding: 4px;
-                font-size: 10px;
-
-                &:hover {
-                    background-color: #3d0404b7;
-                }
+                @extend %botones;
             }
         }
         .proOption{
@@ -149,33 +109,19 @@
             border-radius: 10px;
             margin: 5%;
             &:hover {
-                transition: 1s;
-                transform: scale(1.01);
-                -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-                box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+                @extend %animacionTarjetas;
             }
             img {
                 padding: 5%;
             }
-
             ul {
                 height: 30%;
             }
-
+            li{
+                width: 98%;
+            }
             .botones {
-                width: 10vh;
-                color: aliceblue;
-                text-decoration: none;
-                background-color: rgba(94, 7, 7, 0.756);
-                border: 2px solid rgb(0, 0, 0);
-                border-radius: 10px;
-                padding: 4px;
-                font-size: 10px;
-
-                &:hover {
-                    background-color: #3d0404b7;
-                }
+                @extend %botones;
             }
         }
     }
@@ -205,28 +151,16 @@
         font-style: italic;
     }
 
-    .botones {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px;
-        margin-bottom: 10vh;
-
-        &:hover {
-            background-color: #3d0404b7;
-        }
+    .botones{
+        @extend %botones;
     }
 
-    .regreso {
+    .regreso{
         display: flex;
         align-items: center;
         align-content: center;
 
-        a {
+        a{
             font-size: 18px;
             color: black;
             width: fit-content;

@@ -1,6 +1,34 @@
 @charset "UTF-8";
-/*RESET*/
+/*LISTAS*/
+/*EXTEND*/
 @import url("https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Squada+One&display=swap");
+.historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a, .contactPage1 .formularioContenedor a, .featuresPage1 .featuresHeroe a, .featuresPage1 .featuresContainer .androidFeature a, .featuresPage1 .featuresContainer .iosFeature a, .featuresPage1 .featuresContainer .desktopFeature a, .botones a, .pricingHeroe .textosPricing .botones, .pricingHeroe .optionsContainer .freeOption .botones, .pricingHeroe .optionsContainer .payOption .botones, .pricingHeroe .optionsContainer .proOption .botones, .textosSecundarios .botones {
+  width: 10vh;
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgba(94, 7, 7, 0.756);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px; }
+  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a:hover, .contactPage1 .formularioContenedor a:hover, .featuresPage1 .featuresHeroe a:hover, .featuresPage1 .featuresContainer .androidFeature a:hover, .featuresPage1 .featuresContainer .iosFeature a:hover, .featuresPage1 .featuresContainer .desktopFeature a:hover, .botones a:hover, .pricingHeroe .textosPricing .botones:hover, .pricingHeroe .optionsContainer .freeOption .botones:hover, .pricingHeroe .optionsContainer .payOption .botones:hover, .pricingHeroe .optionsContainer .proOption .botones:hover, .textosSecundarios .botones:hover {
+    background-color: #3d0404b7; }
+
+.aboutusPage1 .aboutContainer .aboutHeroe, .aboutusPage1 .aboutContainer .logoAbout, .aboutusPage1 .aboutContainer .story, .aboutusPage1 .aboutContainer .mission, .aboutusPage1 .aboutContainer .vision, .aboutusPage1 .allContainer, .aboutusPage1 .item1, .aboutusPage1 .item2, .aboutusPage1 .item3 {
+  border: solid 2px;
+  border-color: #ae0909;
+  border-radius: 10px;
+  padding: 5%; }
+
+/*Usar como argumento dentro de la pseudoclase &:hover*/
+.aboutusPage1 .item1:hover, .aboutusPage1 .item2:hover, .aboutusPage1 .item3:hover, .pricingHeroe .optionsContainer .freeOption:hover, .pricingHeroe .optionsContainer .payOption:hover, .pricingHeroe .optionsContainer .proOption:hover {
+  transition: 1s;
+  transform: scale(1.01);
+  -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+  box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -46,14 +74,6 @@ header {
     width: 100%;
     height: 200px;
     margin-bottom: 90px; }
-  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a {
-    color: aliceblue;
-    text-decoration: none;
-    background-color: #5e0707;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 4px;
-    font-size: 15px; }
   .historias .container #sliderHistorias .carousel-control-prev-icon {
     border-radius: 100px;
     background-color: rgba(94, 7, 7, 0.367); }
@@ -145,11 +165,7 @@ footer {
       margin-right: 10vh;
       margin-bottom: 10vh;
       width: fit-content;
-      height: fit-content;
-      border: solid 2px;
-      border-color: #ae0909;
-      border-radius: 10px;
-      padding: 5%; }
+      height: fit-content; }
       .aboutusPage1 .aboutContainer .aboutHeroe h1 {
         color: rgba(94, 7, 7, 0.858);
         font-size: 60px; }
@@ -165,9 +181,6 @@ footer {
       margin-right: 10vh;
       margin-bottom: 10vh;
       width: 75%;
-      border: solid 2px;
-      border-color: #ae0909;
-      border-radius: 10px;
       padding: 1%; }
       .aboutusPage1 .aboutContainer .logoAbout img {
         padding: 10%; }
@@ -180,9 +193,6 @@ footer {
       margin-right: 10vh;
       margin-bottom: 10vh;
       width: fit-content;
-      border: solid 2px;
-      border-color: #ae0909;
-      border-radius: 10px;
       padding: 1%; }
       .aboutusPage1 .aboutContainer .story h2 {
         color: rgba(94, 7, 7, 0.858);
@@ -197,9 +207,6 @@ footer {
       margin-right: 10vh;
       margin-bottom: 10vh;
       width: fit-content;
-      border: solid 2px;
-      border-color: #ae0909;
-      border-radius: 10px;
       padding: 1%; }
       .aboutusPage1 .aboutContainer .mission h2 {
         color: rgba(94, 7, 7, 0.858);
@@ -212,9 +219,6 @@ footer {
       margin-right: 10vh;
       margin-bottom: 10vh;
       width: fit-content;
-      border: solid 2px;
-      border-color: #ae0909;
-      border-radius: 10px;
       padding: 1%; }
       .aboutusPage1 .aboutContainer .vision h2 {
         color: rgba(94, 7, 7, 0.858);
@@ -224,10 +228,6 @@ footer {
         text-align: justify; }
   .aboutusPage1 .allContainer {
     display: grid;
-    border: solid 2px;
-    border-color: #ae0909;
-    border-radius: 10px;
-    padding: 5%;
     margin-left: 10vh;
     margin-right: 10vh;
     grid-template-rows: 10vh 30vh;
@@ -253,16 +253,7 @@ footer {
     text-align: center;
     width: 90%;
     height: 80%;
-    border: solid 2px;
-    border-color: #190000;
-    border-radius: 10px;
-    padding: 5%; }
-    .aboutusPage1 .item1:hover {
-      transition: 1s;
-      transform: scale(1.01);
-      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    border-color: #190000; }
     .aboutusPage1 .item1 h3 {
       height: 30%; }
   .aboutusPage1 .item2 {
@@ -273,16 +264,7 @@ footer {
     align-content: center;
     width: 90%;
     height: 80%;
-    border: solid 2px;
-    border-color: #190000;
-    border-radius: 10px;
-    padding: 5%; }
-    .aboutusPage1 .item2:hover {
-      transition: 1s;
-      transform: scale(1.01);
-      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    border-color: #190000; }
     .aboutusPage1 .item2 h3 {
       height: 30%; }
   .aboutusPage1 .item3 {
@@ -293,16 +275,7 @@ footer {
     align-content: center;
     width: 90%;
     height: 80%;
-    border: solid 2px;
-    border-color: #190000;
-    border-radius: 10px;
-    padding: 5%; }
-    .aboutusPage1 .item3:hover {
-      transition: 1s;
-      transform: scale(1.01);
-      -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-      box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
+    border-color: #190000; }
     .aboutusPage1 .item3 h3 {
       height: 30%; }
 
@@ -415,7 +388,7 @@ footer {
       .contactPage1 .formularioContenedor .espacio .form-control {
         margin: 5px; }
     .contactPage1 .formularioContenedor a {
-      background-color: #5e0707 !important; }
+      font-size: 16px; }
 
 .featuresPage1 {
   text-align: center;
@@ -441,14 +414,6 @@ footer {
       right: -40%;
       top: -80%; }
     .featuresPage1 .featuresHeroe a {
-      width: 10vh;
-      color: aliceblue;
-      text-decoration: none;
-      background-color: rgba(94, 7, 7, 0.756);
-      border: 2px solid black;
-      border-radius: 10px;
-      padding: 4px;
-      font-size: 10px;
       margin-bottom: 5%; }
   .featuresPage1 .featuresContainer {
     display: flex;
@@ -474,14 +439,6 @@ footer {
       .featuresPage1 .featuresContainer .androidFeature ul li {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
       .featuresPage1 .featuresContainer .androidFeature a {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px;
         margin-bottom: 1vh; }
         .featuresPage1 .featuresContainer .androidFeature a:hover {
           background-color: #3d0404b7; }
@@ -505,14 +462,6 @@ footer {
       .featuresPage1 .featuresContainer .iosFeature ul li {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
       .featuresPage1 .featuresContainer .iosFeature a {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px;
         margin-bottom: 1vh; }
         .featuresPage1 .featuresContainer .iosFeature a:hover {
           background-color: #3d0404b7; }
@@ -534,14 +483,6 @@ footer {
       .featuresPage1 .featuresContainer .desktopFeature ul li {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
       .featuresPage1 .featuresContainer .desktopFeature a {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px;
         margin-bottom: 1vh; }
         .featuresPage1 .featuresContainer .desktopFeature a:hover {
           background-color: #3d0404b7; }
@@ -583,16 +524,6 @@ footer {
   color: white;
   font-size: 10px;
   color: black; }
-  .botones a {
-    color: aliceblue;
-    text-decoration: none;
-    background-color: #5e0707;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 4px;
-    font-size: 15px; }
-    .botones a:hover {
-      background-color: #3d0404b7; }
 
 /*!-------------------WhatsApp ICON-----------------------*/
 .whatsapp {
@@ -700,17 +631,6 @@ footer {
     .pricingHeroe .textosPricing img {
       width: 600px;
       height: 600px; }
-    .pricingHeroe .textosPricing .botones {
-      width: 10vh;
-      color: aliceblue;
-      text-decoration: none;
-      background-color: rgba(94, 7, 7, 0.756);
-      border: 2px solid black;
-      border-radius: 10px;
-      padding: 4px;
-      font-size: 10px; }
-      .pricingHeroe .textosPricing .botones:hover {
-        background-color: #3d0404b7; }
   .pricingHeroe .optionsContainer {
     display: flex;
     align-items: center;
@@ -727,27 +647,12 @@ footer {
       border-color: #5e0707;
       border-radius: 10px;
       margin: 5%; }
-      .pricingHeroe .optionsContainer .freeOption:hover {
-        transition: 1s;
-        transform: scale(1.01);
-        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
       .pricingHeroe .optionsContainer .freeOption img {
         padding: 5%; }
       .pricingHeroe .optionsContainer .freeOption ul {
         height: 30%; }
-      .pricingHeroe .optionsContainer .freeOption .botones {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px; }
-        .pricingHeroe .optionsContainer .freeOption .botones:hover {
-          background-color: #3d0404b7; }
+      .pricingHeroe .optionsContainer .freeOption li {
+        width: 98%; }
     .pricingHeroe .optionsContainer .payOption {
       display: flex;
       flex-direction: column;
@@ -758,27 +663,12 @@ footer {
       border-color: #5e0707;
       border-radius: 10px;
       margin: 5%; }
-      .pricingHeroe .optionsContainer .payOption:hover {
-        transition: 1s;
-        transform: scale(1.01);
-        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
       .pricingHeroe .optionsContainer .payOption img {
         padding: 5%; }
       .pricingHeroe .optionsContainer .payOption ul {
         height: 30%; }
-      .pricingHeroe .optionsContainer .payOption .botones {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px; }
-        .pricingHeroe .optionsContainer .payOption .botones:hover {
-          background-color: #3d0404b7; }
+      .pricingHeroe .optionsContainer .payOption li {
+        width: 98%; }
     .pricingHeroe .optionsContainer .proOption {
       display: flex;
       flex-direction: column;
@@ -789,27 +679,12 @@ footer {
       border-color: #5e0707;
       border-radius: 10px;
       margin: 5%; }
-      .pricingHeroe .optionsContainer .proOption:hover {
-        transition: 1s;
-        transform: scale(1.01);
-        -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-        box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35); }
       .pricingHeroe .optionsContainer .proOption img {
         padding: 5%; }
       .pricingHeroe .optionsContainer .proOption ul {
         height: 30%; }
-      .pricingHeroe .optionsContainer .proOption .botones {
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px; }
-        .pricingHeroe .optionsContainer .proOption .botones:hover {
-          background-color: #3d0404b7; }
+      .pricingHeroe .optionsContainer .proOption li {
+        width: 98%; }
 
 .textosSecundarios {
   display: flex;
@@ -828,18 +703,6 @@ footer {
     text-align: center;
     margin-bottom: 5%;
     font-style: italic; }
-  .textosSecundarios .botones {
-    width: 10vh;
-    color: aliceblue;
-    text-decoration: none;
-    background-color: rgba(94, 7, 7, 0.756);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 4px;
-    font-size: 10px;
-    margin-bottom: 10vh; }
-    .textosSecundarios .botones:hover {
-      background-color: #3d0404b7; }
   .textosSecundarios .regreso {
     display: flex;
     align-items: center;
