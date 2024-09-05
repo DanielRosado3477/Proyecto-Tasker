@@ -1,7 +1,10 @@
 /*LISTAS*/
-$colorTituloPrincipal:#5e0707;
+$coloresTitulos:#5e0707;
+$fontSizeTitles: 65px, 50px, 45px, 40px;
+$fontSizeParrafos:25px, 18px, 15px, 12px, 10px;
+$backgroundColorBotones:#3d0404b7, #5e0707a3;
 
-/*EXTEND*/
+/*-------------------------------------EXTEND----------------------------------*/
     %botones{
         width: 10vh;
         color: aliceblue;

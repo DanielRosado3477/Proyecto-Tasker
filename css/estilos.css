@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*LISTAS*/
-/*EXTEND*/
+/*-------------------------------------EXTEND----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Squada+One&display=swap");
 .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a, .contactPage1 .formularioContenedor a, .featuresPage1 .featuresHeroe a, .featuresPage1 .featuresContainer .androidFeature a, .featuresPage1 .featuresContainer .iosFeature a, .featuresPage1 .featuresContainer .desktopFeature a, .botones a, .pricingHeroe .textosPricing .botones, .pricingHeroe .optionsContainer .freeOption .botones, .pricingHeroe .optionsContainer .payOption .botones, .pricingHeroe .optionsContainer .proOption .botones, .textosSecundarios .botones {
   width: 10vh;
@@ -500,11 +500,11 @@ footer {
     color: #080808;
     font-size: large;
     padding: 5rem; }
-    .heroe .textosHeroe h2 {
+    .heroe .textosHeroe h1 {
       color: black;
-      font-size: 4rem; }
+      font-size: 65px; }
     .heroe .textosHeroe p {
-      font-size: 20px; }
+      font-size: 18px; }
   .heroe .imagenHeroe {
     width: 50%;
     color: #080808;
@@ -524,6 +524,8 @@ footer {
   color: white;
   font-size: 10px;
   color: black; }
+  .botones p {
+    margin-top: 1vh; }
 
 /*!-------------------WhatsApp ICON-----------------------*/
 .whatsapp {
@@ -545,6 +547,7 @@ footer {
     padding-top: 3rem;
     padding-bottom: 1rem; }
   .features .textosFeatures p {
+    font-size: 15px;
     padding-bottom: 2rem; }
 
 .featuresContenedor {
@@ -577,7 +580,7 @@ footer {
     padding-top: 6rem;
     text-align: center; }
   .video .videoContenedor p {
-    font-size: larger; }
+    font-size: 15px; }
   .video div iframe {
     margin-top: 10rem;
     margin-bottom: 2rem;
@@ -586,7 +589,7 @@ footer {
 /*! -----------------------------------------HISTORIAS DE EXITO----------------------*/
 .historias {
   background-color: #e7e7e6; }
-  .historias h3 {
+  .historias h2 {
     font-size: 50px;
     padding-top: 3rem;
     margin-bottom: 1rem;
@@ -599,7 +602,7 @@ footer {
   padding-top: 5rem;
   z-index: 6; }
   .preguntas h3 {
-    font-size: 40px;
+    font-size: 45px;
     padding-top: 6rem;
     margin-bottom: 1rem;
     text-align: center; }
