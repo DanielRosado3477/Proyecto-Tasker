@@ -2,14 +2,12 @@
     text-align: center;
     font-size: larger;
     .featuresHeroe{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center,wrap);
         height: 85vh;
         h1{
-            font-size: 45px;
+            font-size:nth($fontSizeTitles,3);
+            color: nth($coloresTitulos,1);
             padding: 2.5%;
-            color: #5e0707;
             text-align: center;
             margin-bottom: 10vh;
         }
@@ -31,14 +29,10 @@
 
     }
     .featuresContainer{
-        display: flex;
-        flex-direction: row;
+        @include flex(row,center,wrap);
         margin: 2.5%;
         .androidFeature{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
+            @include flex(column,center,nowrap);
             border: solid;
             border-color: #5e0707;
             border-radius: 10px;
@@ -68,10 +62,7 @@
             }
         }
         .iosFeature{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
+            @include flex(column,center,nowrap);
             border: solid;
             border-color: #5e0707;
             border-radius: 10px;
@@ -101,10 +92,7 @@
             }
         }
         .desktopFeature{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
+            @include flex(column,center,nowrap);
             border: solid;
             border-color: #5e0707;
             border-radius: 10px;

@@ -18,10 +18,10 @@
                 margin-bottom: 10vh;
                 width:fit-content;
                 height: fit-content;
-                @extend %bordesTarjetas;
+                @include bordesTarjetas;
                 h1{
-                    color: rgba(94, 7, 7, 0.858);
-                    font-size: 60px;
+                    font-size:nth($fontSizeTitles,2);
+                    color: nth($coloresTitulos,1);
                 }
                 p{
                     font-size: 20px;
@@ -29,15 +29,13 @@
                 }
             }
             .logoAbout{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(column,center,nowrap);
                 grid-area: logoAbout;
                 margin-left: 10vh;
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:75%;
-                @extend %bordesTarjetas;
+                @include bordesTarjetas;
                 padding: 1%;
                 img{
                     padding: 10%;
@@ -53,7 +51,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                @extend %bordesTarjetas;
+                @include bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -71,7 +69,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                @extend %bordesTarjetas;
+                @include bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -87,7 +85,7 @@
                 margin-right: 10vh;
                 margin-bottom: 10vh;
                 width:fit-content;
-                @extend %bordesTarjetas;
+                @include bordesTarjetas;
                 padding: 1%;
                 h2{
                     color: rgba(94, 7, 7, 0.858);
@@ -101,7 +99,7 @@
         }
         .allContainer{
             display: grid;
-            @extend %bordesTarjetas;
+            @include bordesTarjetas;
             margin-left: 10vh;
             margin-right: 10vh;
             grid-template-rows:10vh 30vh;
@@ -113,11 +111,8 @@
             align-items:center;
             align-content:center;
             .textosContainer{
-                text-align: center;
                 grid-area: textosContainer;
-                display: flex;
-                align-items: center;
-                align-content: center;
+                @include flex(column,center,nowrap);
                 h2{
                     color: rgba(94, 7, 7, 0.858);
                     font-size: 35px; 
@@ -128,13 +123,10 @@
         .item1{
             grid-area: item1;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content:space-around;
-            text-align: center;
+            @include flex(column,space-around,nowrap);
             width: 90%;
             height: 80%;
-            @extend %bordesTarjetas;
+            @include bordesTarjetas;
             border-color:rgb(25, 0, 0);
             &:hover{
                 @extend %animacionTarjetas;
@@ -146,12 +138,10 @@
         .item2{
             grid-area: item2;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
+            @include flex(column,center,nowrap);
             width: 90%;
             height: 80%;
-            @extend %bordesTarjetas;
+            @include bordesTarjetas;
             border-color:rgb(25, 0, 0);
             &:hover{
                 @extend %animacionTarjetas;
@@ -162,13 +152,10 @@
         }
         .item3{
             grid-area: item3;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
+            @include flex(column,center,nowrap);
             width: 90%;
             height: 80%;
-            @extend %bordesTarjetas;
+            @include bordesTarjetas;
             border-color:rgb(25, 0, 0);
             &:hover{
                 @extend %animacionTarjetas;

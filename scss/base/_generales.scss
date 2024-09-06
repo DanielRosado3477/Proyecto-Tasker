@@ -1,41 +1,32 @@
 /*LISTAS*/
-$coloresTitulos:#5e0707;
+$coloresTitulos:#5e0707,#5e0707a3;
 $fontSizeTitles: 65px, 50px, 45px, 40px;
 $fontSizeParrafos:25px, 18px, 15px, 12px, 10px;
 $backgroundColorBotones:#3d0404b7, #5e0707a3;
 
 /*-------------------------------------EXTEND----------------------------------*/
-    %botones{
-        width: 10vh;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(94, 7, 7, 0.756);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 10px;
+%botones{
+    width: 10vh;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgba(94, 7, 7, 0.756);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 10px;
+    &:hover{
+        background-color: #3d0404b7;
+    }
+}
 
-        &:hover {
-            background-color: #3d0404b7;
-        }
-    }
-    %bordesTarjetas{
-        border: solid 2px;
-        border-color:rgb(174, 9, 9);
-        border-radius: 10px;
-        padding: 5%;
-    }
     /*Usar como argumento dentro de la pseudoclase &:hover*/
-    %animacionTarjetas{
-        transition: 1s;
-        transform: scale(1.01);
-            -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-            -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-            box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
-    }
-
-
-
+%animacionTarjetas{
+    transition: 1s;
+    transform: scale(1.01);
+    -webkit-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+    box-shadow: 16px -7px 7px -11px rgba(0, 0, 0, 0.35);
+}
 
 /*RESET*/
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Squada+One&display=swap');* {

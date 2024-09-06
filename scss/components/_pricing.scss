@@ -1,22 +1,15 @@
 .pricingHeroe {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+    @include flex(column,space-around,nowrap);
     text-align: justify;
 
     .textosPricing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+        @include flex(column,center,nowrap);
         height: 70vh;
 
         h1 {
-            font-size: 45px;
+            font-size:nth($fontSizeTitles,3);
+            color: nth($coloresTitulos,1);
             padding: 2.5%;
-            color: #5e0707;
             text-align: center;
             margin-bottom: 10vh;
         }
@@ -39,16 +32,12 @@
     }
 
     .optionsContainer {
-        display: flex;
-        align-items: center;
-        align-content: center;
+        @include flex(row,center,nowrap);
         width: 100vw;
         height: 65vh;
 
         .freeOption {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,center,nowrap);
             height:100%;
             width: 100%;
             border: 2px solid;
@@ -73,9 +62,7 @@
         }
 
         .payOption {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,center,nowrap);
             height: 100%;
             width: 100%;
             border: 2px solid;
@@ -99,9 +86,7 @@
             }
         }
         .proOption{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,center,nowrap);
             height: 100%;
             width: 100%;
             border: 2px solid;
@@ -128,38 +113,26 @@
 }
 
 .textosSecundarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    @include flex(column,center,nowrap);
     height: fit-content;
     margin-top: 10vh;
-
-    .tituloSecundario {
+    .tituloSecundario{
+        font-size:nth($fontSizeTitles,3);
+        color: nth($coloresTitulos,2);
         width: 80%;
-        ;
         text-align: center;
-        font-size: 50px;
-        color: #5e0707ae;
         font-weight: bold;
-
     }
-
     .parrafoSecundario {
         text-align: center;
         margin-bottom: 5%;
         font-style: italic;
     }
-
     .botones{
         @extend %botones;
     }
-
     .regreso{
-        display: flex;
-        align-items: center;
-        align-content: center;
-
+        @include flex(column,center,nowrap);
         a{
             font-size: 18px;
             color: black;

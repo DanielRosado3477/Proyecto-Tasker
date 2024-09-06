@@ -1,7 +1,7 @@
 /*-----------------------------------REACTIVO INDEX-----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:1490px) {
     header nav ul li {
-        font-size: 19px;
+        font-size:nth($fontSizeParrafos,2);
     }
 }
 
@@ -13,25 +13,23 @@
 
 @media screen and (max-width:1375px) {
     header nav ul li {
-        font-size: 17px;
+        font-size:nth($fontSizeParrafos,3);
     }
 }
 
 @media screen and (max-width:1150px) {
     .heroe .imagenHeroe img {
-        align-content: center;
-        justify-content: center;
         margin: 0px;
         width: 350px;
         height: 350px;
     }
 
-    .heroe .textosHeroe h2 {
-        font-size: 50px;
+    .heroe .textosHeroe h1 {
+        font-size:nth($fontSizeTitles,2);
     }
 
     .heroe .textosHeroe p {
-        font-size: 15px;
+        font-size:nth($fontSizeParrafos,3);
     }
 
     .whatsapp {
@@ -46,27 +44,24 @@
     }
 
     .features .featuresContenedor h3 {
-        font-size: 16px;
+        font-size:nth($fontSizeParrafos,3);
     }
 
     .features .featuresContenedor p {
-        font-size: 13px;
+        font-size:nth($fontSizeParrafos,4);
         margin: 10px;
     }
 
     .video div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+        @include flex(column,center,wrap);
     }
 
     .video .videoContenedor h2 {
-        font-size: 45px;
+        font-size:nth($fontSizeTitles,3);
     }
 
     .video .videoContenedor p {
-        font-size: 16px;
+        font-size:nth($fontSizeParrafos,3);
     }
 
     .video div iframe {
@@ -75,8 +70,8 @@
         height: 280px;
     }
 
-    .historias h3 {
-        font-size: 45px;
+    .historias h2 {
+        font-size:nth($fontSizeTitles,3);
         padding: 2rem;
         margin-bottom: 0rem;
     }
@@ -142,11 +137,11 @@
     }
 
     .heroe .textosHeroe h2 {
-        font-size: 40px;
+        font-size:nth($fontSizeTitles,4);
     }
 
     .features .textosFeatures h2 {
-        font-size: 40px;
+        font-size:nth($fontSizeTitles,4);
         padding-top: 3rem;
     }
 
@@ -155,7 +150,7 @@
         flex-direction: column;
     }
     .video .videoContenedor h2 {
-        font-size: 40px;
+        font-size:nth($fontSizeTitles,4);
         padding-top: 3rem;
     }
 }
@@ -171,10 +166,7 @@
 
 @media screen and (max-width:695px) {
     .heroe {
-        display: flex;
-        flex-direction: column;
-        align-content: space-evenly;
-        text-align: center;
+        @include flex(column,space-evenly,wrap);
     }
 
     .heroe .textosHeroe {
@@ -198,20 +190,16 @@
         margin-bottom: 20px;
     }
     .featureCreate{
-        border:solid;
-        border-color: rgb(206, 204, 204);
+        @include bordesFeatures;
     }
     .featureDelete{
-        border:solid;
-        border-color: rgb(206, 204, 204);
+        @include bordesFeatures;
     }
     .featurePrioritize{
-        border:solid;
-        border-color: rgb(206, 204, 204);
+        @include bordesFeatures;
     }
     .featureUpdate{
-        border:solid;
-        border-color: rgb(206, 204, 204);
+        @include bordesFeatures;
     }
 
     footer .footerContainer {
@@ -283,12 +271,6 @@
         height: 250px;
         padding: 1rem;
         border-radius: 20px;
-    }
-}
-
-@media screen and (max-width:590px){
-    .heroe .imagenHeroe{
-        width: 100%;
     }
 }
 
