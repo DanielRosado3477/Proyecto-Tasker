@@ -797,10 +797,6 @@ footer {
   header nav ul li {
     font-size: 18px; } }
 
-@media screen and (max-width: 1412px) {
-  header nav ul li {
-    font-size: 18px; } }
-
 @media screen and (max-width: 1375px) {
   header nav ul li {
     font-size: 15px; } }
