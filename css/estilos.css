@@ -2,17 +2,27 @@
 /*LISTAS*/
 /*-------------------------------------EXTEND----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Squada+One&display=swap");
-.historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a, .contactPage1 .formularioContenedor a, .featuresPage1 .featuresHeroe a, .featuresPage1 .featuresContainer .androidFeature a, .featuresPage1 .featuresContainer .iosFeature a, .featuresPage1 .featuresContainer .desktopFeature a, .botones a, .pricingHeroe .textosPricing .botones, .pricingHeroe .optionsContainer .freeOption .botones, .pricingHeroe .optionsContainer .payOption .botones, .pricingHeroe .optionsContainer .proOption .botones, .textosSecundarios .botones {
-  width: 10vh;
-  color: aliceblue;
+.historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a, .heroeContact .derecha .textosDerecha a, .contactPage1 .formularioContenedor a, .featuresPage1 .featuresHeroe a, .featuresPage1 .featuresContainer .androidFeature a, .featuresPage1 .featuresContainer .iosFeature a, .featuresPage1 .featuresContainer .desktopFeature a, .botones a, .pricingHeroe .textosPricing .botones, .pricingHeroe .optionsContainer .freeOption .botones, .pricingHeroe .optionsContainer .payOption .botones, .pricingHeroe .optionsContainer .proOption .botones, .textosSecundarios .botones {
   text-decoration: none;
-  background-color: rgba(94, 7, 7, 0.756);
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 4px;
-  font-size: 10px; }
-  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a:hover, .contactPage1 .formularioContenedor a:hover, .featuresPage1 .featuresHeroe a:hover, .featuresPage1 .featuresContainer .androidFeature a:hover, .featuresPage1 .featuresContainer .iosFeature a:hover, .featuresPage1 .featuresContainer .desktopFeature a:hover, .botones a:hover, .pricingHeroe .textosPricing .botones:hover, .pricingHeroe .optionsContainer .freeOption .botones:hover, .pricingHeroe .optionsContainer .payOption .botones:hover, .pricingHeroe .optionsContainer .proOption .botones:hover, .textosSecundarios .botones:hover {
-    background-color: #3d0404b7; }
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(145deg, #690e0eb7, #911414a3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 -4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
+  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a:hover, .heroeContact .derecha .textosDerecha a:hover, .contactPage1 .formularioContenedor a:hover, .featuresPage1 .featuresHeroe a:hover, .featuresPage1 .featuresContainer .androidFeature a:hover, .featuresPage1 .featuresContainer .iosFeature a:hover, .featuresPage1 .featuresContainer .desktopFeature a:hover, .botones a:hover, .pricingHeroe .textosPricing .botones:hover, .pricingHeroe .optionsContainer .freeOption .botones:hover, .pricingHeroe .optionsContainer .payOption .botones:hover, .pricingHeroe .optionsContainer .proOption .botones:hover, .textosSecundarios .botones:hover {
+    background: linear-gradient(145deg, #c24539, #c95426);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4), inset 0 -4px 6px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px); }
+  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a:active, .heroeContact .derecha .textosDerecha a:active, .contactPage1 .formularioContenedor a:active, .featuresPage1 .featuresHeroe a:active, .featuresPage1 .featuresContainer .androidFeature a:active, .featuresPage1 .featuresContainer .iosFeature a:active, .featuresPage1 .featuresContainer .desktopFeature a:active, .botones a:active, .pricingHeroe .textosPricing .botones:active, .pricingHeroe .optionsContainer .freeOption .botones:active, .pricingHeroe .optionsContainer .payOption .botones:active, .pricingHeroe .optionsContainer .proOption .botones:active, .textosSecundarios .botones:active {
+    background: linear-gradient(145deg, #d46969, #c47761);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), inset 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px); }
 
 /*Usar como argumento dentro de la pseudoclase &:hover*/
 .aboutusPage1 .item1:hover, .aboutusPage1 .item2:hover, .aboutusPage1 .item3:hover, .pricingHeroe .optionsContainer .freeOption:hover, .pricingHeroe .optionsContainer .payOption:hover, .pricingHeroe .optionsContainer .proOption:hover {
@@ -68,6 +78,10 @@ header {
     width: 100%;
     height: 200px;
     margin-bottom: 90px; }
+  .historias .container #sliderHistorias .carousel-inner .carousel-item .carousel-caption a {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 8px 18px; }
   .historias .container #sliderHistorias .carousel-control-prev-icon {
     border-radius: 100px;
     background-color: rgba(94, 7, 7, 0.367); }
@@ -83,6 +97,16 @@ header {
 
 .preguntas .accordion .accordion-collapse .accordion-body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+/* -----------------------------------Formulario BOOTSTRAP--------------------------------*/
+.contactPage1 .formularioContenedor a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 45%;
+  margin-right: 45%; }
 
 /*!--------------------------------------------FOOTER------------------------------------*/
 footer {
@@ -144,8 +168,6 @@ footer {
         border-radius: 20px; }
 
 .aboutusPage1 {
-  background: #b3b8be;
-  background: linear-gradient(90deg, rgba(218, 223, 227, 0.936) 0%, rgba(160, 176, 183, 0.521) 15%);
   padding: 1vh; }
   .aboutusPage1 .aboutContainer {
     display: grid;
@@ -398,15 +420,8 @@ footer {
         align-content: center; }
       .heroeContact .derecha .textosDerecha a {
         position: relative;
-        top: -80px;
-        right: 125px;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: #5e0707a3;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 4px;
-        font-size: 15px; }
+        top: -90px;
+        right: 150px; }
 
 .contactPage1 {
   display: flex;
@@ -421,10 +436,10 @@ footer {
     font-size: 40px;
     color: #5e0707a3; }
   .contactPage1 .formularioContenedor {
-    width: 60%;
     border: solid #5e0707;
     border-radius: 5px;
-    padding: 12px; }
+    padding: 12px;
+    width: 60%; }
     .contactPage1 .formularioContenedor .espacio {
       display: flex;
       flex-direction: column; }
@@ -540,14 +555,15 @@ footer {
 
 /*! ------------------------------- SECTION HEROE--------------------------------*/
 .heroe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70vh 10vh;
+  grid-template-areas: "textosHeroe textosHeroe imagenHeroe" "botones botones botones";
+  width: 100%;
   align-items: center;
-  flex-wrap: nowrap;
-  width: 100%; }
+  justify-content: center; }
   .heroe .textosHeroe {
-    width: 50%;
+    grid-area: textosHeroe;
     color: #080808;
     font-size: large;
     padding: 5rem; }
@@ -557,6 +573,7 @@ footer {
     .heroe .textosHeroe p {
       font-size: 18px; }
   .heroe .imagenHeroe {
+    grid-area: imagenHeroe;
     color: #080808;
     font-size: large;
     padding: 5rem; }
@@ -566,6 +583,7 @@ footer {
       border-radius: 10px; }
 
 .botones {
+  grid-area: botones;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -997,21 +1015,21 @@ footer {
     height: 200px; } }
 
 /*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .heroeContact .derecha .textosDerecha a {
-    top: -60px;
-    right: 100px; } }
+    top: -70px;
+    right: 125px; } }
 
 @media screen and (max-width: 1000px) {
   .contactPage1 .formularioContenedor {
     width: 80%; }
   .heroeContact .botones .gift img {
     position: relative;
-    left: 30vh;
+    left: 10vh;
     height: 20vh; }
   .heroeContact .derecha .textosDerecha a {
-    top: -60px;
-    right: 90px; } }
+    top: -38px;
+    right: 70px; } }
 
 @media screen and (max-width: 845px) {
   .contactPage1 .formularioContenedor {
@@ -1020,14 +1038,20 @@ footer {
     width: 90%; }
   .heroeContact .derecha .textosDerecha p {
     font-size: 15px;
-    width: 90%; } }
+    width: 90%; }
+  .heroeContact .derecha .textosDerecha a {
+    top: -35px;
+    right: 50px; }
+  .heroeContact .derecha .textosDerecha a {
+    font-size: 14px; } }
 
 @media screen and (max-width: 800px) {
   .heroeContact .derecha .textosDerecha img {
-    right: -10px; }
+    right: -10px;
+    top: 1%; }
   .heroeContact .derecha .textosDerecha a {
-    top: -60px;
-    right: 80px; } }
+    top: -10px;
+    right: 20px; } }
 
 @media screen and (max-width: 750px) {
   .heroeContact .derecha .textosDerecha img {

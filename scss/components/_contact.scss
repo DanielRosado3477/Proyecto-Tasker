@@ -89,15 +89,9 @@
             }
             a{
                 position: relative;
-                top: -80px;
-                right: 125px;
-                color: aliceblue;
-                text-decoration: none;
-                background-color: #5e0707a3;
-                border: 2px solid black;
-                border-radius: 10px;
-                padding: 4px;
-                font-size: 15px;
+                top: -90px;
+                right: 150px;
+                @extend %botones;
             }
         }
     }
@@ -113,10 +107,10 @@
         color: nth($coloresTitulos,2);
     }
     .formularioContenedor{
-        width: 60%;
         border: solid rgb(94, 7, 7);
         border-radius: 5px;
         padding: 12px;
+        width: 60%;
         .espacio{
             display: flex;
             flex-direction: column;

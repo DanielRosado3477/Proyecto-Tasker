@@ -1,9 +1,16 @@
 /*! ------------------------------- SECTION HEROE--------------------------------*/
 .heroe{
-    @include flex(row,center,wrap);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 10vh;
+    grid-template-areas:
+    "textosHeroe textosHeroe imagenHeroe"
+    "botones botones botones";
     width: 100%;
+    align-items: center;
+    justify-content: center;
     .textosHeroe{
-        width: 50%;
+        grid-area: textosHeroe;
         color: rgb(8, 8, 8);
         font-size: large;
         padding: 5rem;
@@ -16,6 +23,7 @@
         }
     }
     .imagenHeroe{
+        grid-area: imagenHeroe;
         color: rgb(8, 8, 8);
         font-size: large;
         padding: 5rem;
@@ -28,7 +36,7 @@
 }
 
 .botones{
-
+    grid-area: botones;
     @include flex(column,center,wrap);
     text-align: center;
     color: rgb(255, 255, 255);
@@ -37,7 +45,7 @@
     padding: 3px;
     color: black;
         a{
-            @extend %botones
+            @extend %botones;
         }
         p{
             margin-top: 1vh;

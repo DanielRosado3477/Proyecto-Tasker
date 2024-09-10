@@ -302,10 +302,10 @@
     }
 }
 /*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1250px){
     .heroeContact .derecha .textosDerecha a{
-        top: -60px;
-        right:100px;
+        top: -70px;
+        right:125px;
     }
 }
 
@@ -315,12 +315,12 @@
     }
     .heroeContact .botones .gift img{
             position: relative;
-            left:30vh;
+            left:10vh;
             height: 20vh;
     }
     .heroeContact .derecha .textosDerecha a{
-        top: -60px;
-        right:90px;
+        top: -38px;
+        right:70px;
     }
 }
 
@@ -335,14 +335,22 @@
         font-size: 15px;
         width: 90%;
     }
+    .heroeContact .derecha .textosDerecha a{
+        top: -35px;
+        right:50px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:800px){
     .heroeContact .derecha .textosDerecha img{
         right: -10px;
+        top:1%;
     }
     .heroeContact .derecha .textosDerecha a{
-        top: -60px;
-        right:80px;
+        top: -10px;
+        right:20px;
     }
 }
 @media screen and (max-width:750px){
