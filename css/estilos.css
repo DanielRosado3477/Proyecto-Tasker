@@ -1088,7 +1088,9 @@ footer {
     width: 130px;
     height: 130px; }
   .heroeContact .derecha .textosDerecha a {
-    right: 15px; }
+    right: 15px;
+    font-size: 10px;
+    width: fit-content; }
   .heroeContact .izquierda h2 {
     font-size: 20px; } }
 
@@ -1097,7 +1099,11 @@ footer {
     position: relative;
     left: 12vh;
     width: 130px;
-    height: 130px; } }
+    height: 130px; }
+  .heroeContact .derecha .textosDerecha a {
+    right: 15px;
+    font-size: 10px;
+    width: fit-content; } }
 
 /*---------------------------------------REACTIVO PRICING PAGE---------------------------------*/
 @media screen and (max-width: 1000px) {
