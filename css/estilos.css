@@ -902,6 +902,10 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 900px) {
+  .heroe .textosHeroe {
+    padding-right: 1rem; }
+  .heroe .imagenHeroe {
+    padding-left: 1rem; }
   .heroe .imagenHeroe img {
     width: 300px;
     height: 300px; }
@@ -919,9 +923,9 @@ footer {
 
 @media screen and (max-width: 760px) {
   .heroe .imagenHeroe {
-    padding: 1rem; }
+    padding: 2rem; }
   .heroe .textosHeroe {
-    padding: 4rem; } }
+    padding: 2rem; } }
 
 @media screen and (max-width: 695px) {
   .heroe {
