@@ -115,7 +115,7 @@
 .textosSecundarios {
     @include flex(column,center,nowrap);
     height: fit-content;
-    margin-top: 10vh;
+    margin-top: 5vh;
     .tituloSecundario{
         font-size:nth($fontSizeTitles,3);
         color: nth($coloresTitulos,2);
@@ -141,7 +141,7 @@
             text-decoration: none;
             text-align: center;
             padding: 4px;
-
+            margin-bottom: 5vh;
             &:hover {
                 background-color: #ebe0e067;
                 border-radius: 10px;

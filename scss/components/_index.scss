@@ -90,18 +90,22 @@
         .featuresCreate{
             grid-area: featureCreate;
             height: 100%;
+            padding: 5%;
         }
         .featureUpdate{
             grid-area: featureUpdate;
             height:100%;
+            padding: 5%;
         }
         .featurePrioritize{
             grid-area: featurePrioritize;
             height:100%;
+            padding: 5%;
         }
         .featureDelete{
             grid-area: featureDelete;
             height:100%;
+            padding: 5%
         }
     }
 

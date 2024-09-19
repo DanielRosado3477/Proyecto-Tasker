@@ -91,6 +91,12 @@
 }
 
 @media screen and (max-width:961px) {
+    .heroe .textosHeroe h1 {
+        font-size:nth($fontSizeTitles,3);
+    }
+    .heroe .textosHeroe {
+        padding-right: 0rem;
+        }
     .features .featuresContenedor {
         display: grid;
         grid-template-rows: auto;
@@ -483,10 +489,14 @@
 @media screen and (max-width:495px){
     .pricingHeroe .textosPricing h1{
         font-size: 35px;
-        margin-bottom: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
     }
     .pricingHeroe .textosPricing p{
         font-size: 16px;
+    }
+    .pricingHeroe .textosPricing .botones{
+        margin-bottom: 10vh;
     }
     .textosSecundarios .tituloSecundario{
         font-size: 30px;
@@ -552,6 +562,9 @@
     }
 }
 @media screen and (max-width:650px){
+    .featuresPage1 .featuresHeroe h1{
+        margin-bottom: 0vh;
+    }
     .featuresPage1 .featuresContainer .androidFeature{
         margin-left: 12%;
         margin-right: 12%;
@@ -566,7 +579,7 @@
 }
 @media screen and (max-width:470px){
     .featuresPage1 .featuresHeroe h1{
-        margin-top: 3vh;
+        margin-top: 20vh;
     }
 }
 @media screen and (max-width:390px){
@@ -751,8 +764,8 @@
             .aboutHeroe{
                 grid-area: aboutHeroe;
                 padding: 1%;
-                margin-right: 6vh;
-                margin-left: 6vh;
+                margin-right: 3vh;
+                margin-left: 3vh;
                 margin-bottom: 4vh;
             }
             .logoAbout{
@@ -771,21 +784,22 @@
             }
             .story{
                 grid-area: story;
-                margin-right: 6vh;
-                margin-left: 6vh;
+                margin-bottom: 5vh;
+                margin-right: 3vh;
+                margin-left: 3vh;
             }
             .mission{
                 grid-area: mission;
                 height: 90%;
-                margin-right: 6vh;
-                margin-left: 6vh;
+                margin-right: 3vh;
+                margin-left: 3vh;
                 margin-bottom: 10vh;
                 }
             .vision{
                 grid-area: vision;
                 height: 90%;
-                margin-right: 6vh;
-                margin-left: 6vh;
+                margin-right: 3vh;
+                margin-left: 3vh;
                 margin-bottom: 10vh;
             }
     }
@@ -796,8 +810,8 @@
         border-color: #ae0909;
         border-radius: 10px;
         padding: 5%;
-        margin-left: 6vh;
-        margin-right: 6vh;
+        margin-left: 3vh;
+        margin-right: 3vh;
         align-items: center;
         align-content: center;
     }

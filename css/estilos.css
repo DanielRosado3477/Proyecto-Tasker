@@ -471,10 +471,8 @@ footer {
       font-size: larger;
       font-weight: bold;
       margin-bottom: 10vh; }
-    .featuresPage1 .featuresHeroe .img {
-      position: fixed;
-      right: -40%;
-      top: -80%; }
+    .featuresPage1 .featuresHeroe .rocket {
+      margin-bottom: 10vh; }
     .featuresPage1 .featuresHeroe a {
       margin-bottom: 5%; }
   .featuresPage1 .featuresContainer {
@@ -631,16 +629,20 @@ footer {
   margin-bottom: 1rem; }
   .featuresContenedor .featuresCreate {
     grid-area: featureCreate;
-    height: 100%; }
+    height: 100%;
+    padding: 5%; }
   .featuresContenedor .featureUpdate {
     grid-area: featureUpdate;
-    height: 100%; }
+    height: 100%;
+    padding: 5%; }
   .featuresContenedor .featurePrioritize {
     grid-area: featurePrioritize;
-    height: 100%; }
+    height: 100%;
+    padding: 5%; }
   .featuresContenedor .featureDelete {
     grid-area: featureDelete;
-    height: 100%; }
+    height: 100%;
+    padding: 5%; }
 
 /*!-------------------------------------------SECCION VIDEO-----------------------*/
 .video {
@@ -783,7 +785,7 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
   height: fit-content;
-  margin-top: 10vh; }
+  margin-top: 5vh; }
   .textosSecundarios .tituloSecundario {
     font-size: 45px;
     color: #5e0707a3;
@@ -807,7 +809,8 @@ footer {
       text-decoration: none;
       text-decoration: none;
       text-align: center;
-      padding: 4px; }
+      padding: 4px;
+      margin-bottom: 5vh; }
       .textosSecundarios .regreso a:hover {
         background-color: #ebe0e067;
         border-radius: 10px; }
@@ -873,6 +876,10 @@ footer {
     padding: 0px; } }
 
 @media screen and (max-width: 961px) {
+  .heroe .textosHeroe h1 {
+    font-size: 45px; }
+  .heroe .textosHeroe {
+    padding-right: 0rem; }
   .features .featuresContenedor {
     display: grid;
     grid-template-rows: auto;
@@ -1154,9 +1161,12 @@ footer {
 @media screen and (max-width: 495px) {
   .pricingHeroe .textosPricing h1 {
     font-size: 35px;
-    margin-bottom: 5vh; }
+    margin-top: 5vh;
+    margin-bottom: 2vh; }
   .pricingHeroe .textosPricing p {
     font-size: 16px; }
+  .pricingHeroe .textosPricing .botones {
+    margin-bottom: 10vh; }
   .textosSecundarios .tituloSecundario {
     font-size: 30px; }
   .textosSecundarios .regreso a {
@@ -1202,6 +1212,8 @@ footer {
     margin-bottom: 0%; } }
 
 @media screen and (max-width: 650px) {
+  .featuresPage1 .featuresHeroe h1 {
+    margin-bottom: 0vh; }
   .featuresPage1 .featuresContainer .androidFeature {
     margin-left: 12%;
     margin-right: 12%; }
@@ -1214,7 +1226,7 @@ footer {
 
 @media screen and (max-width: 470px) {
   .featuresPage1 .featuresHeroe h1 {
-    margin-top: 3vh; } }
+    margin-top: 20vh; } }
 
 @media screen and (max-width: 390px) {
   .featuresPage1 .featuresContainer .androidFeature {
@@ -1353,8 +1365,8 @@ footer {
   .aboutusPage1 .aboutContainer .aboutHeroe {
     grid-area: aboutHeroe;
     padding: 1%;
-    margin-right: 6vh;
-    margin-left: 6vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
     margin-bottom: 4vh; }
   .aboutusPage1 .aboutContainer .logoAbout {
     grid-area: logoAbout;
@@ -1370,19 +1382,20 @@ footer {
       padding: 1%; }
   .aboutusPage1 .aboutContainer .story {
     grid-area: story;
-    margin-right: 6vh;
-    margin-left: 6vh; }
+    margin-bottom: 5vh;
+    margin-right: 3vh;
+    margin-left: 3vh; }
   .aboutusPage1 .aboutContainer .mission {
     grid-area: mission;
     height: 90%;
-    margin-right: 6vh;
-    margin-left: 6vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
     margin-bottom: 10vh; }
   .aboutusPage1 .aboutContainer .vision {
     grid-area: vision;
     height: 90%;
-    margin-right: 6vh;
-    margin-left: 6vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
     margin-bottom: 10vh; }
   .aboutusPage1 .allContainer {
     display: flex;
@@ -1391,8 +1404,8 @@ footer {
     border-color: #ae0909;
     border-radius: 10px;
     padding: 5%;
-    margin-left: 6vh;
-    margin-right: 6vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
     align-items: center;
     align-content: center; }
   .aboutusPage1 .item1 {
